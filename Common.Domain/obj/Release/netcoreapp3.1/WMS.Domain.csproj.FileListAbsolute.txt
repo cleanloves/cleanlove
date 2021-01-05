@@ -1,0 +1,55 @@
+C:\Users\DELL\Desktop\KrbbAdmin.Api.WMS\KrbbAdmin.Api.WMS\WMS.Domain\bin\Release\netcoreapp3.1\WMS.Domain.deps.json
+C:\Users\DELL\Desktop\KrbbAdmin.Api.WMS\KrbbAdmin.Api.WMS\WMS.Domain\bin\Release\netcoreapp3.1\WMS.Domain.dll
+C:\Users\DELL\Desktop\KrbbAdmin.Api.WMS\KrbbAdmin.Api.WMS\WMS.Domain\bin\Release\netcoreapp3.1\WMS.Domain.pdb
+C:\Users\DELL\Desktop\KrbbAdmin.Api.WMS\KrbbAdmin.Api.WMS\WMS.Domain\bin\Release\netcoreapp3.1\WMS.Domain.xml
+C:\Users\DELL\Desktop\KrbbAdmin.Api.WMS\KrbbAdmin.Api.WMS\WMS.Domain\obj\Release\netcoreapp3.1\WMS.Domain.csprojAssemblyReference.cache
+C:\Users\DELL\Desktop\KrbbAdmin.Api.WMS\KrbbAdmin.Api.WMS\WMS.Domain\obj\Release\netcoreapp3.1\WMS.Domain.AssemblyInfoInputs.cache
+C:\Users\DELL\Desktop\KrbbAdmin.Api.WMS\KrbbAdmin.Api.WMS\WMS.Domain\obj\Release\netcoreapp3.1\WMS.Domain.AssemblyInfo.cs
+C:\Users\DELL\Desktop\KrbbAdmin.Api.WMS\KrbbAdmin.Api.WMS\WMS.Domain\obj\Release\netcoreapp3.1\WMS.Domain.dll
+C:\Users\DELL\Desktop\KrbbAdmin.Api.WMS\KrbbAdmin.Api.WMS\WMS.Domain\obj\Release\netcoreapp3.1\WMS.Domain.xml
+C:\Users\DELL\Desktop\KrbbAdmin.Api.WMS\KrbbAdmin.Api.WMS\WMS.Domain\obj\Release\netcoreapp3.1\WMS.Domain.pdb
+C:\Users\DELL\Desktop\KrbbAdmin.Api.WMS\KrbbAdmin.Api.WMS\WMS.Domain\obj\Release\netcoreapp3.1\WMS.Domain.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\新建文件夹\KrbbAdmin.Api.WMS\KrbbAdmin.Api.WMS\WMS.Domain\bin\Release\netcoreapp3.1\WMS.Domain.deps.json
+C:\Users\DELL\Desktop\新建文件夹\KrbbAdmin.Api.WMS\KrbbAdmin.Api.WMS\WMS.Domain\bin\Release\netcoreapp3.1\WMS.Domain.dll
+C:\Users\DELL\Desktop\新建文件夹\KrbbAdmin.Api.WMS\KrbbAdmin.Api.WMS\WMS.Domain\bin\Release\netcoreapp3.1\WMS.Domain.pdb
+C:\Users\DELL\Desktop\新建文件夹\KrbbAdmin.Api.WMS\KrbbAdmin.Api.WMS\WMS.Domain\bin\Release\netcoreapp3.1\WMS.Domain.xml
+C:\Users\DELL\Desktop\新建文件夹\KrbbAdmin.Api.WMS\KrbbAdmin.Api.WMS\WMS.Domain\obj\Release\netcoreapp3.1\WMS.Domain.csprojAssemblyReference.cache
+C:\Users\DELL\Desktop\新建文件夹\KrbbAdmin.Api.WMS\KrbbAdmin.Api.WMS\WMS.Domain\obj\Release\netcoreapp3.1\WMS.Domain.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\新建文件夹\KrbbAdmin.Api.WMS\KrbbAdmin.Api.WMS\WMS.Domain\obj\Release\netcoreapp3.1\WMS.Domain.AssemblyInfoInputs.cache
+C:\Users\DELL\Desktop\新建文件夹\KrbbAdmin.Api.WMS\KrbbAdmin.Api.WMS\WMS.Domain\obj\Release\netcoreapp3.1\WMS.Domain.AssemblyInfo.cs
+C:\Users\DELL\Desktop\新建文件夹\KrbbAdmin.Api.WMS\KrbbAdmin.Api.WMS\WMS.Domain\obj\Release\netcoreapp3.1\WMS.Domain.dll
+C:\Users\DELL\Desktop\新建文件夹\KrbbAdmin.Api.WMS\KrbbAdmin.Api.WMS\WMS.Domain\obj\Release\netcoreapp3.1\WMS.Domain.xml
+C:\Users\DELL\Desktop\新建文件夹\KrbbAdmin.Api.WMS\KrbbAdmin.Api.WMS\WMS.Domain\obj\Release\netcoreapp3.1\WMS.Domain.pdb
+C:\Users\DELL\Desktop\WMS\KrbbAdmin.Api.WMS\KrbbAdmin.Api.WMS\WMS.Domain\bin\Release\netcoreapp3.1\WMS.Domain.deps.json
+C:\Users\DELL\Desktop\WMS\KrbbAdmin.Api.WMS\KrbbAdmin.Api.WMS\WMS.Domain\bin\Release\netcoreapp3.1\WMS.Domain.dll
+C:\Users\DELL\Desktop\WMS\KrbbAdmin.Api.WMS\KrbbAdmin.Api.WMS\WMS.Domain\bin\Release\netcoreapp3.1\WMS.Domain.pdb
+C:\Users\DELL\Desktop\WMS\KrbbAdmin.Api.WMS\KrbbAdmin.Api.WMS\WMS.Domain\bin\Release\netcoreapp3.1\WMS.Domain.xml
+C:\Users\DELL\Desktop\WMS\KrbbAdmin.Api.WMS\KrbbAdmin.Api.WMS\WMS.Domain\obj\Release\netcoreapp3.1\WMS.Domain.csprojAssemblyReference.cache
+C:\Users\DELL\Desktop\WMS\KrbbAdmin.Api.WMS\KrbbAdmin.Api.WMS\WMS.Domain\obj\Release\netcoreapp3.1\WMS.Domain.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\WMS\KrbbAdmin.Api.WMS\KrbbAdmin.Api.WMS\WMS.Domain\obj\Release\netcoreapp3.1\WMS.Domain.AssemblyInfoInputs.cache
+C:\Users\DELL\Desktop\WMS\KrbbAdmin.Api.WMS\KrbbAdmin.Api.WMS\WMS.Domain\obj\Release\netcoreapp3.1\WMS.Domain.AssemblyInfo.cs
+C:\Users\DELL\Desktop\WMS\KrbbAdmin.Api.WMS\KrbbAdmin.Api.WMS\WMS.Domain\obj\Release\netcoreapp3.1\WMS.Domain.dll
+C:\Users\DELL\Desktop\WMS\KrbbAdmin.Api.WMS\KrbbAdmin.Api.WMS\WMS.Domain\obj\Release\netcoreapp3.1\WMS.Domain.xml
+C:\Users\DELL\Desktop\WMS\KrbbAdmin.Api.WMS\KrbbAdmin.Api.WMS\WMS.Domain\obj\Release\netcoreapp3.1\WMS.Domain.pdb
+C:\Users\DELL\Desktop\WMS\KrbbAdmin.Api.WMS\WMS.Domain\bin\Release\netcoreapp3.1\WMS.Domain.deps.json
+C:\Users\DELL\Desktop\WMS\KrbbAdmin.Api.WMS\WMS.Domain\bin\Release\netcoreapp3.1\WMS.Domain.dll
+C:\Users\DELL\Desktop\WMS\KrbbAdmin.Api.WMS\WMS.Domain\bin\Release\netcoreapp3.1\WMS.Domain.pdb
+C:\Users\DELL\Desktop\WMS\KrbbAdmin.Api.WMS\WMS.Domain\bin\Release\netcoreapp3.1\WMS.Domain.xml
+C:\Users\DELL\Desktop\WMS\KrbbAdmin.Api.WMS\WMS.Domain\obj\Release\netcoreapp3.1\WMS.Domain.csprojAssemblyReference.cache
+C:\Users\DELL\Desktop\WMS\KrbbAdmin.Api.WMS\WMS.Domain\obj\Release\netcoreapp3.1\WMS.Domain.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\WMS\KrbbAdmin.Api.WMS\WMS.Domain\obj\Release\netcoreapp3.1\WMS.Domain.AssemblyInfoInputs.cache
+C:\Users\DELL\Desktop\WMS\KrbbAdmin.Api.WMS\WMS.Domain\obj\Release\netcoreapp3.1\WMS.Domain.AssemblyInfo.cs
+C:\Users\DELL\Desktop\WMS\KrbbAdmin.Api.WMS\WMS.Domain\obj\Release\netcoreapp3.1\WMS.Domain.dll
+C:\Users\DELL\Desktop\WMS\KrbbAdmin.Api.WMS\WMS.Domain\obj\Release\netcoreapp3.1\WMS.Domain.xml
+C:\Users\DELL\Desktop\WMS\KrbbAdmin.Api.WMS\WMS.Domain\obj\Release\netcoreapp3.1\WMS.Domain.pdb
+C:\Users\DELL\Documents\Tencent Files\501646397\FileRecv\WMS\KrbbAdmin.Api.WMS\WMS.Domain\bin\Release\netcoreapp3.1\WMS.Domain.deps.json
+C:\Users\DELL\Documents\Tencent Files\501646397\FileRecv\WMS\KrbbAdmin.Api.WMS\WMS.Domain\bin\Release\netcoreapp3.1\WMS.Domain.dll
+C:\Users\DELL\Documents\Tencent Files\501646397\FileRecv\WMS\KrbbAdmin.Api.WMS\WMS.Domain\bin\Release\netcoreapp3.1\WMS.Domain.pdb
+C:\Users\DELL\Documents\Tencent Files\501646397\FileRecv\WMS\KrbbAdmin.Api.WMS\WMS.Domain\bin\Release\netcoreapp3.1\WMS.Domain.xml
+C:\Users\DELL\Documents\Tencent Files\501646397\FileRecv\WMS\KrbbAdmin.Api.WMS\WMS.Domain\obj\Release\netcoreapp3.1\WMS.Domain.csprojAssemblyReference.cache
+C:\Users\DELL\Documents\Tencent Files\501646397\FileRecv\WMS\KrbbAdmin.Api.WMS\WMS.Domain\obj\Release\netcoreapp3.1\WMS.Domain.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Documents\Tencent Files\501646397\FileRecv\WMS\KrbbAdmin.Api.WMS\WMS.Domain\obj\Release\netcoreapp3.1\WMS.Domain.AssemblyInfoInputs.cache
+C:\Users\DELL\Documents\Tencent Files\501646397\FileRecv\WMS\KrbbAdmin.Api.WMS\WMS.Domain\obj\Release\netcoreapp3.1\WMS.Domain.AssemblyInfo.cs
+C:\Users\DELL\Documents\Tencent Files\501646397\FileRecv\WMS\KrbbAdmin.Api.WMS\WMS.Domain\obj\Release\netcoreapp3.1\WMS.Domain.dll
+C:\Users\DELL\Documents\Tencent Files\501646397\FileRecv\WMS\KrbbAdmin.Api.WMS\WMS.Domain\obj\Release\netcoreapp3.1\WMS.Domain.xml
+C:\Users\DELL\Documents\Tencent Files\501646397\FileRecv\WMS\KrbbAdmin.Api.WMS\WMS.Domain\obj\Release\netcoreapp3.1\WMS.Domain.pdb

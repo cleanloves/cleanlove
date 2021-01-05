@@ -1,0 +1,245 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Common.Domain</name>
+    </assembly>
+    <members>
+        <member name="T:Common.Domain.AggregateRoots.ComHoliday">
+            <summary>
+            节假日
+            </summary>
+        </member>
+        <member name="P:Common.Domain.AggregateRoots.ComHoliday.Name">
+            <summary>
+            节假日名称
+            </summary>
+        </member>
+        <member name="P:Common.Domain.AggregateRoots.ComHoliday.Date">
+            <summary>
+            日期
+            </summary>
+        </member>
+        <member name="P:Common.Domain.AggregateRoots.ComHoliday.Day">
+            <summary>
+            总天数
+            </summary>
+        </member>
+        <member name="P:Common.Domain.AggregateRoots.ComHoliday.CreateDate">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:Common.Domain.ComHolidayManager">
+            <summary>
+            领域服务：节假日
+            </summary>
+        </member>
+        <member name="M:Common.Domain.ComHolidayManager.AddAsync(System.Guid,Common.Domain.Models.ComHolidayForm)">
+            <summary>
+            添加
+            </summary>
+            <param name="tenantId">机构id</param>
+            <param name="entity">节假日实体</param>
+            <returns>添加结果</returns>
+        </member>
+        <member name="M:Common.Domain.ComHolidayManager.UpdateAsync(System.Guid,Common.Domain.Models.ComHolidayForm)">
+            <summary>
+            修改
+            </summary>
+            <param name="entity">实体</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:Common.Domain.ComHolidayManager.DeleteAsync(System.Guid)">
+            <summary>
+            删除
+            </summary>
+            <param name="id">id</param>
+            <returns>结果</returns>
+        </member>
+        <member name="T:Common.Domain.Interfaces.IComHolidayManager">
+            <summary>
+            领域服务：节假日
+            </summary>
+        </member>
+        <member name="M:Common.Domain.Interfaces.IComHolidayManager.AddAsync(System.Guid,Common.Domain.Models.ComHolidayForm)">
+            <summary>
+            添加
+            </summary>
+            <param name="tenantId">机构id</param>
+            <param name="entity">节假日实体</param>
+            <returns>添加结果</returns>
+        </member>
+        <member name="M:Common.Domain.Interfaces.IComHolidayManager.UpdateAsync(System.Guid,Common.Domain.Models.ComHolidayForm)">
+            <summary>
+            修改
+            </summary>
+            <param name="tenantId"></param>
+            <param name="entity">实体</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:Common.Domain.Interfaces.IComHolidayManager.DeleteAsync(System.Guid)">
+            <summary>
+            删除
+            </summary>
+            <param name="id">id</param>
+            <returns>结果</returns>
+        </member>
+        <member name="T:Common.Domain.Models.ComHolidayForm">
+            <summary>
+            表单：节假日
+            </summary>
+        </member>
+        <member name="P:Common.Domain.Models.ComHolidayForm.Name">
+            <summary>
+            节假日名称
+            </summary>
+        </member>
+        <member name="P:Common.Domain.Models.ComHolidayForm.Date">
+            <summary>
+            日期
+            </summary>
+        </member>
+        <member name="P:Common.Domain.Models.ComHolidayForm.Day">
+            <summary>
+            总天数
+            </summary>
+        </member>
+        <member name="T:Common.Domain.Models.WmsSupplierForm">
+            <summary>
+            表单：供应商表
+            </summary>
+        </member>
+        <member name="P:Common.Domain.Models.WmsSupplierForm.Name">
+            <summary>
+            供应商名称
+            </summary>
+        </member>
+        <member name="P:Common.Domain.Models.WmsSupplierForm.Brand">
+            <summary>
+             品牌
+             </summary>
+        </member>
+        <member name="P:Common.Domain.Models.WmsSupplierForm.Contacts">
+            <summary>
+            联系人
+            </summary>
+        </member>
+        <member name="P:Common.Domain.Models.WmsSupplierForm.Phone">
+            <summary>
+            联系电话
+             </summary>
+        </member>
+        <member name="P:Common.Domain.Models.WmsSupplierForm.QQ">
+            <summary>
+            QQ号码
+             </summary>
+        </member>
+        <member name="P:Common.Domain.Models.WmsSupplierForm.Mailbox">
+            <summary>
+            邮箱
+             </summary>
+        </member>
+        <member name="P:Common.Domain.Models.WmsSupplierForm.Address">
+            <summary>
+            联系地址
+             </summary>
+        </member>
+        <member name="P:Common.Domain.Models.WmsSupplierForm.ProductScope">
+            <summary>
+            产品范围
+            </summary>
+        </member>
+        <member name="T:Common.Domain.Models.WmsWarehouseForm">
+            <summary>
+            表单：仓库表
+            </summary>
+        </member>
+        <member name="P:Common.Domain.Models.WmsWarehouseForm.Name">
+            <summary>
+            仓库名称
+            </summary>
+        </member>
+        <member name="P:Common.Domain.Models.WmsWarehouseForm.Place">
+            <summary>
+            所在地点
+            </summary>
+        </member>
+        <member name="P:Common.Domain.Models.WmsWarehouseForm.PersonName">
+            <summary>
+            负责人员
+            </summary>
+        </member>
+        <member name="P:Common.Domain.Models.WmsWarehouseForm.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="T:Common.Domain.Repositorys.IComHolidayRepository">
+            <summary>
+            仓储：节假日
+            </summary>
+        </member>
+        <member name="M:Common.Domain.Repositorys.IComHolidayRepository.GetListWithHolidayAsync(System.String)">
+            <summary>
+            查询实体
+            </summary>
+            <param name="name">节假日名称</param>
+            <returns>查询结果</returns>
+        </member>
+        <member name="T:Common.Domain.ValueObjects.WmsDuplicateExWarehouse">
+            <summary>
+            值：重复出库记录
+            </summary>
+        </member>
+        <member name="P:Common.Domain.ValueObjects.WmsDuplicateExWarehouse.InventoryId">
+            <summary>
+            库存id
+            </summary>
+        </member>
+        <member name="P:Common.Domain.ValueObjects.WmsDuplicateExWarehouse.Details">
+            <summary>
+            重复的序列号集合
+            </summary>
+        </member>
+        <member name="T:Common.Domain.ValueObjects.WmsDuplicateExWarehouseDetail">
+            <summary>
+            值：重复出库详情
+            </summary>
+        </member>
+        <member name="P:Common.Domain.ValueObjects.WmsDuplicateExWarehouseDetail.Code">
+            <summary>
+            序列号
+            </summary>
+        </member>
+        <member name="T:Common.Domain.ValueObjects.WmsDuplicateInWarehouse">
+            <summary>
+            值：重复入库记录
+            </summary>
+        </member>
+        <member name="P:Common.Domain.ValueObjects.WmsDuplicateInWarehouse.GoodsId">
+            <summary>
+            物品id
+            </summary>
+        </member>
+        <member name="P:Common.Domain.ValueObjects.WmsDuplicateInWarehouse.Details">
+            <summary>
+            重复的序列号集合
+            </summary>
+        </member>
+        <member name="T:Common.Domain.ValueObjects.WmsDuplicateInWarehouseDetail">
+            <summary>
+            值：重复入库详情
+            </summary>
+        </member>
+        <member name="P:Common.Domain.ValueObjects.WmsDuplicateInWarehouseDetail.Code">
+            <summary>
+            序列号
+            </summary>
+        </member>
+        <member name="P:Common.Domain.ValueObjects.WmsDuplicateInWarehouseDetail.WarehouseName">
+            <summary>
+            仓库名称
+            </summary>
+        </member>
+    </members>
+</doc>

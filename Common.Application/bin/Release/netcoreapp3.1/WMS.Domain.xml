@@ -1,0 +1,3780 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WMS.Domain</name>
+    </assembly>
+    <members>
+        <member name="T:WMS.Domain.AggregateRoots.PmsPurchase">
+            <summary>
+            申购信息表
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.PmsPurchase.PurchaseDate">
+            <summary>
+            申购日期
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.PmsPurchase.PurchaseNumber">
+            <summary>
+            申购单号
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.PmsPurchase.CreatorId">
+            <summary>
+            创建人id
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.PmsPurchase.CreatorName">
+            <summary>
+            创建人名称
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.PmsPurchase.State">
+            <summary>
+            处理状态 0：待处理 1：已完成
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.PmsPurchase.UpdateTime">
+            <summary>
+            更新时间
+            </summary>
+        </member>
+        <member name="M:WMS.Domain.AggregateRoots.PmsPurchase.AddDetails(WMS.Domain.Models.PmsPurchaseForm)">
+            <summary>
+            添加申购详情
+            </summary>
+            <param name="entity"></param>
+        </member>
+        <member name="M:WMS.Domain.AggregateRoots.PmsPurchase.UpdatePurchaseTime">
+            <summary>
+            修改申购时间
+            </summary>
+        </member>
+        <member name="T:WMS.Domain.AggregateRoots.WmsAllotDetail">
+            <summary>
+            调拨明细表
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsAllotDetail.WmsAllotId">
+            <summary>
+            调拨Id
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsAllotDetail.Code">
+            <summary>
+            唯一序列号
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsAllotDetail.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="T:WMS.Domain.AggregateRoots.WmsAmend">
+            <summary>
+            修正信息表
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsAmend.InventoryId">
+            <summary>
+            库存id
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsAmend.CheckNumber">
+            <summary>
+            盘点单号
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsAmend.WarehouseId">
+            <summary>
+            仓库id
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsAmend.WarehouseName">
+            <summary>
+            仓库名称
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsAmend.Number">
+            <summary>
+            物品编号
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsAmend.Name">
+            <summary>
+            物品名称
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsAmend.Specification">
+            <summary>
+            规格型号
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsAmend.Unit">
+            <summary>
+            单位
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsAmend.AmendAmount">
+            <summary>
+            修正数量
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsAmend.AmendType">
+            <summary>
+            修正类型
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsAmend.CreatorId">
+            <summary>
+            修正人员id
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsAmend.CreatorName">
+            <summary>
+            修正人员名称
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsAmend.CreateTime">
+            <summary>
+            修正时间
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsAmend.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="M:WMS.Domain.AggregateRoots.WmsAmend.AddMessage(WMS.Domain.AggregateRoots.WmsCheck,WMS.Domain.Models.WmsAmendForm,WMS.Domain.AggregateRoots.WmsCheckDetail,System.Guid,WMS.Domain.Models.WmsLoginUser)">
+            <summary>
+            添加修正信息
+            </summary>
+        </member>
+        <member name="T:WMS.Domain.AggregateRoots.WmsAmendDetail">
+            <summary>
+            修正信息详情表
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsAmendDetail.WmsAmendId">
+            <summary>
+            修正表id
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsAmendDetail.Code">
+            <summary>
+            唯一序列号
+            </summary>
+        </member>
+        <member name="T:WMS.Domain.AggregateRoots.WmsApply">
+            <summary>
+            申领表
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsApply.CreateTime">
+            <summary>
+            申领日期
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsApply.ApplyNumber">
+            <summary>
+            申领单号
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsApply.State">
+            <summary>
+            处理状态 0:待处理 1：已完成
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsApply.CreatorId">
+            <summary>
+            创建人id
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsApply.CreatorName">
+            <summary>
+            创建人名称
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsApply.ProcessingTime">
+            <summary>
+            处理时间
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsApply.ProcessingName">
+            <summary>
+            处理人员
+            </summary>
+        </member>
+        <member name="M:WMS.Domain.AggregateRoots.WmsApply.AddMessage(System.Guid,WMS.Domain.Models.WmsLoginUser)">
+            <summary>
+            添加申领信息
+            </summary>
+            <param name="tenantId">租户id</param>
+            <param name="loginUser">创建者</param>
+        </member>
+        <member name="T:WMS.Domain.AggregateRoots.WmsApplyDetail">
+            <summary>
+            申领明细表
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsApplyDetail.WmsApplyId">
+            <summary>
+            申领Id
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsApplyDetail.WmsGoodsId">
+            <summary>
+            物品表Id
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsApplyDetail.Number">
+            <summary>
+            物品编号
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsApplyDetail.Name">
+            <summary>
+            物品名称
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsApplyDetail.Specificationtype">
+            <summary>
+            规格型号
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsApplyDetail.Unit">
+            <summary>
+            单位
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsApplyDetail.ApplyAmount">
+            <summary>
+            申领数量
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsApplyDetail.Purpose">
+            <summary>
+            用途
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsApplyDetail.OutgoingQuantity">
+            <summary>
+            出库数量
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsApplyDetail.Status">
+            <summary>
+            处理状态  0:待处理 1：已完成 2：跟进中
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsApplyDetail.WmsApplyExContacts">
+            <summary>
+            申领出库关联表
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:WMS.Domain.AggregateRoots.WmsApplyDetail.UpdateState(System.Decimal)" -->
+        <member name="M:WMS.Domain.AggregateRoots.WmsApplyDetail.AddMessage(WMS.Domain.AggregateRoots.WmsGoods,WMS.Domain.AggregateRoots.WmsApply)">
+            <summary>
+            添加申领明细信息
+            </summary>
+            <param name="goods">物品表</param>
+            <param name="apply">申领表</param>
+        </member>
+        <member name="T:WMS.Domain.AggregateRoots.WmsApplyExContact">
+            <summary>
+            申领-出库关联表
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsApplyExContact.WmsApplyDetailId">
+            <summary>
+            申领明细Id
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsApplyExContact.WmsExWarehouseId">
+            <summary>
+            出库Id
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsApplyExContact.WmsExWarehouses">
+            <summary>
+            出库记录表
+            </summary>
+        </member>
+        <member name="T:WMS.Domain.AggregateRoots.WmsCheck">
+            <summary>
+            盘点表
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsCheck.CheckNumber">
+            <summary>
+            盘点单号
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsCheck.WarehouseName">
+            <summary>
+            盘点仓库名称
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsCheck.GoodsNumber">
+            <summary>
+            物品条数
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsCheck.DiversityNumber">
+            <summary>
+            差异条数
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsCheck.State">
+            <summary>
+            盘点状态   0:未盘 1：已盘
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsCheck.CreatorId">
+            <summary>
+            盘点人员
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsCheck.CreatorName">
+            <summary>
+            盘点人员名称
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsCheck.CreateTime">
+            <summary>
+            盘点时间
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsCheck.WmsCheckDetails">
+            <summary>
+            是否结束盘点
+            </summary>
+        </member>
+        <member name="M:WMS.Domain.AggregateRoots.WmsCheck.AddMessage(System.Guid,WMS.Domain.Models.WmsLoginUser,System.Collections.Generic.IEnumerable{System.Guid},System.Collections.Generic.IEnumerable{WMS.Domain.AggregateRoots.WmsInventory})">
+            <summary>
+            添加盘点信息
+            </summary>
+            <param name="tenantId">租户id</param>
+            <param name="loginUser">创建者</param>
+            <param name="inventoryId">库存id集合</param>
+            <param name="inventorys">库存表</param>
+        </member>
+        <member name="M:WMS.Domain.AggregateRoots.WmsCheck.UpdateMessage(WMS.Domain.AggregateRoots.WmsCheck,WMS.Domain.AggregateRoots.WmsCheckDetail)">
+            <summary>
+            添加盘点信息
+            </summary>
+            <param name="check">盘点信息表</param>
+            <param name="entity">盘点明细实体</param>
+        </member>
+        <member name="M:WMS.Domain.AggregateRoots.WmsCheck.Subtract(WMS.Domain.AggregateRoots.WmsCheckDetail,WMS.Domain.Models.WmsAmendForm)">
+            <summary>
+            修正完成之后减掉差异数量
+            </summary>
+            <param name="detail">盘点详情表</param>
+            <param name="entity">表单：修正信息</param>
+        </member>
+        <member name="T:WMS.Domain.AggregateRoots.WmsCheckDetail">
+            <summary>
+            盘点详情表
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsCheckDetail.WmsCheckId">
+             <summary>
+            盘点表Id
+             </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsCheckDetail.InventoryId">
+            <summary>
+            库存Id
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsCheckDetail.CheckWarehouseId">
+            <summary>
+            仓库id
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsCheckDetail.CheckWarehouseName">
+            <summary>
+            仓库名称
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsCheckDetail.Number">
+            <summary>
+            物品编号
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsCheckDetail.Name">
+            <summary>
+            物品名称
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsCheckDetail.Specification">
+            <summary>
+            规格型号
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsCheckDetail.Unit">
+            <summary>
+            单位
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsCheckDetail.SysInventory">
+            <summary>
+            系统库存
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsCheckDetail.ActualInventory">
+            <summary>
+            实际库存
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsCheckDetail.DifferencesAmount">
+            <summary>
+            差异数量
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsCheckDetail.AmendState">
+            <summary>
+            修正状态 0:待修正 1：已修正 
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsCheckDetail.State">
+            <summary>
+            盘点明细状态 0:未盘 1：已盘
+            </summary>
+        </member>
+        <member name="M:WMS.Domain.AggregateRoots.WmsCheckDetail.AddMessage(WMS.Domain.AggregateRoots.WmsInventory)">
+            <summary>
+            添加盘点明细信息
+            </summary>
+            <param name="inventory">库存</param>
+        </member>
+        <member name="M:WMS.Domain.AggregateRoots.WmsCheckDetail.UpdateMessage(WMS.Domain.Models.WmsCheckResultForm)">
+            <summary>
+            修改盘点明细信息
+            </summary>
+            <param name="checkResultForm">实体：盘点结果</param>
+        </member>
+        <member name="M:WMS.Domain.AggregateRoots.WmsCheckDetail.ExUpdateQuantity(WMS.Domain.Models.WmsAmendForm)">
+            <summary>
+            出库修改差异数量
+            </summary>
+        </member>
+        <member name="M:WMS.Domain.AggregateRoots.WmsCheckDetail.InUpdateQuantity(WMS.Domain.Models.WmsAmendForm)">
+            <summary>
+            入库修改差异数量
+            </summary>
+        </member>
+        <member name="T:WMS.Domain.AggregateRoots.WmsExWarehouse">
+            <summary>
+            基础表：出库记录
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsExWarehouse.WmsWarehouseId">
+            <summary>
+            仓库Id
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsExWarehouse.WmsWarehouse">
+            <summary>
+            仓库
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsExWarehouse.InventoryId">
+            <summary>
+            库存id
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsExWarehouse.ApplyNumber">
+            <summary>
+            申领单号
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsExWarehouse.ApplyDetailId">
+            <summary>
+            申领明细id
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsExWarehouse.GoodsId">
+            <summary>
+            物品id
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsExWarehouse.GoodsNumber">
+            <summary>
+            物品编号
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsExWarehouse.GoodsName">
+            <summary>
+            物品名称
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsExWarehouse.IsNeed">
+            <summary>
+            是否需要序列号
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsExWarehouse.Unit">
+            <summary>
+            单位
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsExWarehouse.Specification">
+            <summary>
+            规格
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsExWarehouse.Quantity">
+            <summary>
+            数量
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsExWarehouse.CreateTime">
+            <summary>
+            出库日期
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsExWarehouse.CreatorId">
+            <summary>
+            创建人id
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsExWarehouse.CreatorName">
+            <summary>
+            创建人名称
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsExWarehouse.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsExWarehouse.WmsExWarehouseDetails">
+            <summary>
+            出库明细表
+            </summary>
+        </member>
+        <member name="M:WMS.Domain.AggregateRoots.WmsExWarehouse.SetGoods(WMS.Domain.AggregateRoots.WmsExWarehouse,WMS.Domain.AggregateRoots.WmsInventory,WMS.Domain.Models.WmsLoginUser,WMS.Domain.AggregateRoots.WmsApplyDetail,System.Guid)">
+            <summary>
+            添加出库信息
+            </summary>
+            <param name="data"></param>
+            <param name="inventory">库存物品</param>
+            <param name="loginUser"></param>
+            <param name="detail"></param>
+            <param name="id">申领明细id</param>
+        </member>
+        <member name="M:WMS.Domain.AggregateRoots.WmsExWarehouse.Init(WMS.Domain.AggregateRoots.WmsInventory,WMS.Domain.Models.WmsLoginUser,System.Guid)">
+            <summary>
+            初始化
+            </summary>
+            <param name="inventory">库存</param>
+            <param name="loginUser">创建者</param>
+            <param name="warehouseId">仓库Id</param>
+        </member>
+        <member name="M:WMS.Domain.AggregateRoots.WmsExWarehouse.AddMsg(WMS.Domain.AggregateRoots.WmsInventory,WMS.Domain.Models.WmsLoginUser,WMS.Domain.Models.WmsAmendForm)">
+            <summary>
+            添加出库信息
+            </summary>
+            <param name="inventory">库存</param>
+            <param name="loginUser">创建者</param>
+            <param name="entity">修正实体</param>
+        </member>
+        <member name="M:WMS.Domain.AggregateRoots.WmsExWarehouse.DistinctDetails(WMS.Domain.AggregateRoots.WmsInventory)">
+            <summary>
+            过滤重复数据
+            </summary>
+            <param name="inventory">库存</param>
+            <returns>重复数据</returns>
+        </member>
+        <member name="M:WMS.Domain.AggregateRoots.WmsExWarehouse.DistinctDetails">
+            <summary>
+            过滤重复数据
+            </summary>
+        </member>
+        <member name="T:WMS.Domain.AggregateRoots.WmsExWarehouseDetail">
+            <summary>
+            子表：出库明细
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsExWarehouseDetail.WmsExWarehouseId">
+            <summary>
+            出库物品表Id
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsExWarehouseDetail.Code">
+            <summary>
+            唯一序列号
+            </summary>
+        </member>
+        <member name="T:WMS.Domain.AggregateRoots.WmsGoods">
+            <summary>
+            基础表：物品资料
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsGoods.WmsGoodsTypeId">
+            <summary>
+            分类表Id
+            </summary>      
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsGoods.Number">
+            <summary>
+            物品编号
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsGoods.Name">
+            <summary>
+            物品名称
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsGoods.IconUrl">
+            <summary>
+            封面地址
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsGoods.Specification">
+            <summary>
+            规格型号
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsGoods.Unit">
+            <summary>
+            单位
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsGoods.Description">
+            <summary>
+            物品描述
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsGoods.IsNeed">
+            <summary>
+            是否需要序列号
+            </summary>
+        </member>
+        <member name="T:WMS.Domain.AggregateRoots.WmsGoodsType">
+            <summary>
+            基础表：物品分类
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsGoodsType.ParentId">
+            <summary>
+            上级Id
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsGoodsType.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsGoodsType.SortNumber">
+            <summary>
+            排序号 由大到小
+            </summary>
+        </member>
+        <member name="T:WMS.Domain.AggregateRoots.WmsInventory">
+            <summary>
+            基础表：库存表
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsInventory.WmsWarehouseId">
+            <summary>
+            仓库Id
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsInventory.GoodsId">
+            <summary>
+            物品id
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsInventory.IsNeed">
+            <summary>
+            是否需要序列号
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsInventory.GoodsNumber">
+            <summary>
+            物品编号
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsInventory.GoodsName">
+            <summary>
+            物品名称
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsInventory.IconUrl">
+            <summary>
+            物品图片
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsInventory.Unit">
+            <summary>
+            单位
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsInventory.Specification">
+            <summary>
+            规格
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsInventory.Quantity">
+            <summary>
+            数量
+            </summary>
+        </member>
+        <member name="M:WMS.Domain.AggregateRoots.WmsInventory.CheckDetailIsExists(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            检查识别码是否已经存在
+            </summary>
+            <param name="codes">识别码集合</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:WMS.Domain.AggregateRoots.WmsInventory.PutInto(WMS.Domain.AggregateRoots.WmsInWarehouse,System.Collections.Generic.IEnumerable{WMS.Domain.Models.WmsInWarehouseForm},System.Guid)">
+            <summary>
+            入库(有库存数据)
+            </summary>
+            <param name="inWarehouse">入库记录</param>
+            <param name="entities">实体</param>
+            <param name="warehouseId">仓库id</param>
+        </member>
+        <member name="M:WMS.Domain.AggregateRoots.WmsInventory.DeleteInAllot(WMS.Domain.WmsAllot)">
+            <summary>
+            删除入库调拨记录
+            </summary>
+        </member>
+        <member name="M:WMS.Domain.AggregateRoots.WmsInventory.DeleteExAllot(WMS.Domain.WmsAllot)">
+            <summary>
+            删除出库调拨记录
+            </summary>
+        </member>
+        <member name="M:WMS.Domain.AggregateRoots.WmsInventory.PutOut(WMS.Domain.AggregateRoots.WmsExWarehouse)">
+            <summary>
+            出库
+            </summary>
+            <param name="exWarehouse">入库记录</param>
+        </member>
+        <member name="M:WMS.Domain.AggregateRoots.WmsInventory.CheckDetailIsContains(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            检查识别码是否已经包含
+            </summary>
+            <param name="codes">识别码集合</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:WMS.Domain.AggregateRoots.WmsInventory.AmendPutIn(WMS.Domain.AggregateRoots.WmsAmend,WMS.Domain.Models.WmsAmendForm)">
+            <summary>
+            异常修正入库
+            </summary>
+            <param name="amend">修正表</param>
+            <param name="amendForm">修正表表单</param>
+        </member>
+        <member name="M:WMS.Domain.AggregateRoots.WmsInventory.CheckDetailInclude(System.Collections.Generic.IEnumerable{System.String},System.String@)">
+            <summary>
+            (异常修正)检查识别码是否已经存在
+            </summary>
+            <param name="codes">识别码集合</param>
+            <param name="code">序列号</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:WMS.Domain.AggregateRoots.WmsInventory.AmendPutOut(WMS.Domain.AggregateRoots.WmsAmend,WMS.Domain.Models.WmsAmendForm)">
+            <summary>
+            异常修正出库
+            </summary>
+            <param name="amend">修正表</param>
+            <param name="amendForm">修正表表单</param>
+        </member>
+        <member name="M:WMS.Domain.AggregateRoots.WmsInventory.CheckDetailContains(System.Collections.Generic.IEnumerable{System.String},System.String@)">
+            <summary>
+            (异常修正)检查识别码是否含有
+            </summary>
+            <param name="codes">识别码集合</param>
+             <param name="code">返回识别码</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:WMS.Domain.AggregateRoots.WmsInventory.InWarehouse(WMS.Domain.WmsAllot,System.Decimal)">
+            <summary>
+            调入仓库
+            </summary>
+            <param name="allot">调拨记录</param>
+            <param name="amount">个数</param>
+        </member>
+        <member name="M:WMS.Domain.AggregateRoots.WmsInventory.Init(WMS.Domain.AggregateRoots.WmsGoods,System.Guid)">
+            <summary>
+            初始化
+            </summary>
+            <param name="goods">物品</param>
+            <param name="warehouseId">仓库Id</param>
+        </member>
+        <member name="M:WMS.Domain.AggregateRoots.WmsInventory.PutIn(WMS.Domain.AggregateRoots.WmsInWarehouse)">
+            <summary>
+            入库
+            </summary>
+            <param name="inWarehouse">入库记录</param>
+        </member>
+        <member name="M:WMS.Domain.AggregateRoots.WmsInventory.PutOuts(WMS.Domain.WmsAllot,System.Decimal)">
+            <summary>
+            调出仓库
+            </summary>
+            <param name="allot">调拨记录</param>
+            <param name="amount">数量</param>
+        </member>
+        <member name="M:WMS.Domain.AggregateRoots.WmsInventory.DeleteIn(WMS.Domain.AggregateRoots.WmsInWarehouse)">
+            <summary>
+            删除入库记录
+            </summary>
+            <param name="inWarehouse"></param>
+        </member>
+        <member name="M:WMS.Domain.AggregateRoots.WmsInventory.PutEx(WMS.Domain.AggregateRoots.WmsExWarehouse)">
+            <summary>
+            出库
+            </summary>
+            <param name="exWarehouse">入库记录</param>
+        </member>
+        <member name="M:WMS.Domain.AggregateRoots.WmsInventory.DeleteEx(WMS.Domain.AggregateRoots.WmsExWarehouse)">
+            <summary>
+            删除出库记录
+            </summary>
+            <param name="exWarehouse"></param>
+        </member>
+        <member name="T:WMS.Domain.AggregateRoots.WmsInventoryDetail">
+            <summary>
+            子表：库存明细
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsInventoryDetail.WmsInventoryId">
+            <summary>
+            库存Id
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsInventoryDetail.Code">
+            <summary>
+            唯一序列号
+            </summary>
+        </member>
+        <member name="T:WMS.Domain.AggregateRoots.WmsInWarehouse">
+            <summary>
+            基础表：入库记录
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsInWarehouse.WmsWarehouseId">
+            <summary>
+            仓库Id
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsInWarehouse.GoodsId">
+            <summary>
+            物品id
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsInWarehouse.GoodsNumber">
+            <summary>
+            物品编号
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsInWarehouse.GoodsName">
+            <summary>
+            物品名称
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsInWarehouse.IconUrl">
+            <summary>
+            物品图片
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsInWarehouse.Unit">
+            <summary>
+            单位
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsInWarehouse.IsNeed">
+            <summary>
+            是否需要序列号
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsInWarehouse.Specification">
+            <summary>
+            规格
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsInWarehouse.Quantity">
+            <summary>
+            入库数量
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsInWarehouse.CreateTime">
+            <summary>
+            入库日期
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsInWarehouse.CreatorId">
+            <summary>
+            创建人id
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsInWarehouse.CreatorName">
+            <summary>
+            创建人名称
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsInWarehouse.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsInWarehouse.WmsInWarehouseDetails">
+            <summary>
+            是否被调拨
+            </summary>
+        </member>
+        <member name="M:WMS.Domain.AggregateRoots.WmsInWarehouse.SetGoods(WMS.Domain.AggregateRoots.WmsGoods,WMS.Domain.Models.WmsLoginUser,System.Guid,System.Collections.Generic.IEnumerable{WMS.Domain.Models.WmsInWarehouseForm})">
+            <summary>
+            设置入库物品
+            </summary>
+            <param name="goods">物品</param>
+            <param name="loginUser">创建者</param>
+            <param name="warehouseId">仓库Id</param>
+            <param name="entities">实体</param>
+        </member>
+        <member name="M:WMS.Domain.AggregateRoots.WmsInWarehouse.Init(WMS.Domain.AggregateRoots.WmsGoods,WMS.Domain.Models.WmsLoginUser,System.Guid)">
+            <summary>
+            初始化
+            </summary>
+            <param name="goods">物品</param>
+            <param name="loginUser">创建者</param>
+            <param name="warehouseId">仓库Id</param>
+        </member>
+        <member name="M:WMS.Domain.AggregateRoots.WmsInWarehouse.AddMsg(WMS.Domain.AggregateRoots.WmsInventory,WMS.Domain.Models.WmsLoginUser,WMS.Domain.Models.WmsAmendForm)">
+            <summary>
+            添加入库信息
+            </summary>
+            <param name="inventory">库存</param>
+            <param name="loginUser">创建者</param>
+            <param name="entity">修正实体</param>
+        </member>
+        <member name="M:WMS.Domain.AggregateRoots.WmsInWarehouse.DistinctDetails(WMS.Domain.AggregateRoots.WmsInventory)">
+            <summary>
+            过滤重复数据（已有库存）
+            </summary>
+            <param name="inventory">库存</param>
+            <returns>重复数据</returns>
+        </member>
+        <member name="M:WMS.Domain.AggregateRoots.WmsInWarehouse.DistinctDetails">
+            <summary>
+            过滤重复数据
+            </summary>
+        </member>
+        <member name="T:WMS.Domain.AggregateRoots.WmsInWarehouseDetail">
+            <summary>
+            子表：入库明细
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsInWarehouseDetail.WmsInWarehouseId">
+            <summary>
+            入库物品表Id
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsInWarehouseDetail.Code">
+            <summary>
+            唯一序列号
+            </summary>
+        </member>
+        <member name="T:WMS.Domain.AggregateRoots.WmsSupplier">
+            <summary>
+            基础表：供应商
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsSupplier.Name">
+            <summary>
+            供应商名称
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsSupplier.Brand">
+            <summary>
+             品牌
+             </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsSupplier.Contacts">
+            <summary>
+            联系人
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsSupplier.Phone">
+            <summary>
+             联系电话
+             </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsSupplier.QQ">
+            <summary>
+            QQ号码
+             </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsSupplier.Mailbox">
+            <summary>
+            邮箱
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsSupplier.Address">
+            <summary>
+            联系地址
+             </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsSupplier.ProductScope">
+            <summary>
+            产品范围
+            </summary>
+        </member>
+        <member name="T:WMS.Domain.AggregateRoots.WmsWarehouse">
+            <summary>
+            基础表：仓库
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsWarehouse.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsWarehouse.Place">
+            <summary>
+            所在地点
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsWarehouse.PersonName">
+            <summary>
+            负责人员
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsWarehouse.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.AggregateRoots.WmsWarehouse.CheckState">
+            <summary>
+            盘点状态
+            </summary>
+        </member>
+        <member name="T:WMS.Domain.PmsPurchaseDetail">
+            <summary>
+            申购信息明细表
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.PmsPurchaseDetail.PmsPurchaseId">
+            <summary>
+            申购Id
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.PmsPurchaseDetail.Name">
+            <summary>
+            物品名称
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.PmsPurchaseDetail.Specification">
+            <summary>
+            规格型号
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.PmsPurchaseDetail.Unit">
+            <summary>
+            单位
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.PmsPurchaseDetail.ApplyAmount">
+            <summary>
+            申购数量
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.PmsPurchaseDetail.ProcureAmount">
+            <summary>
+            采购数量
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.PmsPurchaseDetail.ProcurePrice">
+            <summary>
+            采购单价
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.PmsPurchaseDetail.ProcureMoney">
+            <summary>
+            采购金额
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.PmsPurchaseDetail.Purpose">
+            <summary>
+            用途
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.PmsPurchaseDetail.Describe">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.PmsPurchaseDetail.PmsSupplierId">
+            <summary>
+            供应商Id
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.PmsPurchaseDetail.PmsSupplierName">
+            <summary>
+            供应商
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.PmsPurchaseDetail.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.PmsPurchaseDetail.DetailState">
+            <summary>
+            处理状态 0：待估价 1:待采购 2：待审核 3：已完成 4已取消
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.PmsPurchaseDetail.HandleTime">
+            <summary>
+            处理日期
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.PmsPurchaseDetail.ExamineTime">
+            <summary>
+            审核日期
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.PmsPurchaseDetail.Checker">
+            <summary>
+            审核人
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.PmsPurchaseDetail.ProcessingTime">
+            <summary>
+            估价日期
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.PmsPurchaseDetail.valuator">
+            <summary>
+            估价人
+            </summary>
+        </member>
+        <member name="T:WMS.Domain.WmsAllot">
+            <summary>
+            调拨信息表
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.WmsAllot.CreateTime">
+            <summary>
+            调拨日期
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.WmsAllot.ExWarehouseId">
+            <summary>
+            调出仓库
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.WmsAllot.GoodsId">
+            <summary>
+            物品id
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.WmsAllot.IsNeed">
+            <summary>
+            是否需要序列号
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.WmsAllot.GoodsNumber">
+            <summary>
+            物品编号
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.WmsAllot.GoodsName">
+            <summary>
+            物品名称
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.WmsAllot.Specification">
+            <summary>
+            规格
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.WmsAllot.Unit">
+            <summary>
+            单位
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.WmsAllot.Quantity">
+            <summary>
+            数量
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.WmsAllot.InWarehouseId">
+            <summary>
+            调入仓库
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.WmsAllot.CreatorId">
+            <summary>
+            创建人id
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.WmsAllot.CreatorName">
+            <summary>
+            创建人名称
+            </summary>
+        </member>
+        <member name="M:WMS.Domain.WmsAllot.SetGoos(WMS.Domain.AggregateRoots.WmsInventory,System.Guid,WMS.Domain.Models.WmsLoginUser,System.Guid,System.Guid,System.Decimal)">
+            <summary>
+            添加库存物品
+            </summary>
+            <param name="inventory">库存</param>
+            <param name="tenantId">租户Id</param>
+            <param name="loginUser">创建者</param>
+            <param name="inWarehouseId">调入仓库</param>
+            <param name="exWarehouseId">调出仓库</param>
+            <param name="amont">数量</param>
+        </member>
+        <member name="T:WMS.Domain.Interfaces.IPmsPurchaseDetailManager">
+            <summary>
+            领域服务：申购明细
+            </summary>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IPmsPurchaseDetailManager.GetWithProcureAsync(System.Int32,System.Int32,System.DateTime,System.DateTime,System.Int32,System.Int32,System.String)">
+            <summary>
+            采购分页
+            </summary>
+            <param name="pageIndex">页码</param>
+            <param name="pageSize">页数</param>
+            <param name="beginTime">开始时间</param>
+            <param name="endTime">结束时间</param>
+            <param name="state">状态</param>
+            <param name="keyType">查询类型（0 名称 1 型号）</param>
+            <param name="key">关键字</param>
+            <returns>分页</returns>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IPmsPurchaseDetailManager.UpdateAsync(WMS.Domain.Models.PmsProcureForm)">
+            <summary>
+            修改
+            </summary>
+            <param name="entity">实体</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IPmsPurchaseDetailManager.ExportListAsync(System.DateTime,System.DateTime,System.Int32,System.Int32,System.String)">
+            <summary>
+            采购导出
+            </summary>
+            <param name="beginTime">开始时间</param>
+            <param name="endTime">结束时间</param>
+            <param name="state">状态</param>
+             <param name="keyType">查询类型（0 名称 1 型号）</param>
+            <param name="key">关键字</param>
+            <returns>查询结果</returns>
+        </member>
+        <member name="T:WMS.Domain.Interfaces.IPmsPurchaseManager">
+            <summary>
+            领域服务：申购信息表
+            </summary>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IPmsPurchaseManager.AddAsync(WMS.Domain.Models.WmsLoginUser,System.Guid,WMS.Domain.Models.PmsPurchaseForm)">
+            <summary>
+            添加
+            </summary>
+            <param name="loginUser">登录用户</param>
+            <param name="tenantId">租户id</param>
+            <param name="entity">实体</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IPmsPurchaseManager.UpdateAsync(WMS.Domain.Models.PmsPurchaseDetailForm,WMS.Domain.Models.WmsLoginUser)">
+            <summary>
+            修改:物品估价
+            </summary>
+            <param name="entity">实体</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IPmsPurchaseManager.DeleteAsync(System.Guid)">
+            <summary>
+            删除
+            </summary>
+            <param name="id">id</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IPmsPurchaseManager.GetPageAsync(System.Int32,System.Int32,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.Int32,System.String)">
+            <summary>
+            分页查询
+            </summary>
+            <param name="pageIndex">页码</param>
+            <param name="pageSize">页数</param>
+            <param name="beginTime">开始时间</param>
+            <param name="endTime">结束时间</param>
+            <param name="state">状态</param>
+            <param name="keyType">查询类型（0 名称 1 型号 2 用途）</param>
+            <param name="key">关键字</param>
+            <returns>查询结果</returns>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IPmsPurchaseManager.UploadImageAsync(System.Guid,System.Guid,System.String,System.IO.Stream)">
+            <summary>
+            上传图片
+            </summary>
+            <param name="tenantId">机构id</param>
+            <param name="id">申购Id</param>
+            <param name="fileName">文件名</param>
+            <param name="file">文件流</param>
+            <returns>上传图片结果</returns>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IPmsPurchaseManager.ExportExcelAsync(System.DateTime,System.DateTime,System.Int32,System.Int32,System.String)">
+            <summary>
+            导出
+            </summary>
+            <param name="beginTime">开始时间</param>
+            <param name="endTime">结束时间</param>
+            <param name="state">状态</param>
+            <param name="keyType">查询类型（0 名称 1 型号 2 用途）</param>
+            <param name="key">关键字</param>
+            <returns>导出结果</returns>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IPmsPurchaseManager.UpdateVerifyAsync(WMS.Domain.Models.PmsDetailForm,WMS.Domain.Models.WmsLoginUser)">
+            <summary>
+            审核修改
+            </summary>
+            <param name="entity">实体</param>
+            <returns>审核结果</returns>
+        </member>
+        <member name="T:WMS.Domain.Interfaces.IPmsSupplierManager">
+            <summary>
+            领域服务：供应商
+            </summary>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IPmsSupplierManager.GetPageAsync(System.Int32,System.Int32,System.Int32,System.String)">
+            <summary>
+            获取分页
+            </summary>
+            <param name="pageIndex">页码</param>
+            <param name="pageSize">页数</param>
+            <param name="keyType">关键字类型（0名称 1简称 2联系人 3联系人电话 4产品范围）</param>
+            <param name="key">关键字</param>
+            <returns>分页</returns>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IPmsSupplierManager.AddAsync(System.Guid,WMS.Domain.Models.WmsSupplierForm)">
+            <summary>
+            添加
+            </summary>
+            <param name="tenantId">租户id</param>
+            <param name="entity">实体</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IPmsSupplierManager.UpdateAsync(WMS.Domain.Models.WmsSupplierForm)">
+            <summary>
+            修改
+            </summary>
+            <param name="entity">实体</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IPmsSupplierManager.DeleteAsync(System.Guid)">
+            <summary>
+            删除
+            </summary>
+            <param name="id">供应商Id</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IPmsSupplierManager.ExportExcelAsync">
+            <summary>
+            导出
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:WMS.Domain.Interfaces.IWmsAllotManager">
+            <summary>
+            领域服务：调拨记录
+            </summary>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IWmsAllotManager.GetPageAsync(System.Int32,System.Int32,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.String)">
+            <summary>
+            分页
+            </summary>
+            <param name="pageIndex">页码</param>
+            <param name="pageSize">页数</param>
+            <param name="beginTime">开始时间</param>
+            <param name="endTime">结束时间</param>
+            <param name="keyType">查询类型（0 名称 1 型号 2 序列号）</param>
+            <param name="key">关键字</param>
+            <param name="SN">序列号</param>
+            <returns>分页</returns>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IWmsAllotManager.AddAsync(System.Guid,WMS.Domain.Models.WmsLoginUser,System.Guid,System.Guid,System.Collections.Generic.IEnumerable{WMS.Domain.Models.WmsAllotForm})">
+            <summary>
+            添加
+            </summary>
+            <param name="tenantId">租户Id</param>
+            <param name="loginUser">创建者</param>
+            <param name="InWarehouseId">调入仓库</param>
+            <param name="ExWarehouseId">调出仓库</param>
+            <param name="entities">实体</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IWmsAllotManager.ExportExcelAsync(System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.String,System.String)">
+            <summary>
+            导出
+            </summary>
+            <param name="beginTime">开始时间</param>
+            <param name="endTime">结束时间</param>
+            <param name="keyType">查询类型（0 名称 1 型号 ）</param>
+            <param name="key">关键字</param>
+            <param name="SN">序列号</param>
+            <returns></returns>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IWmsAllotManager.DeleteAsync(System.Guid)">
+            <summary>
+            删除
+            </summary>
+            <param name="id">调拨Id</param>
+            <returns>结果</returns>
+        </member>
+        <member name="T:WMS.Domain.Interfaces.IWmsAmendManager">
+            <summary>
+            领域服务：修正信息
+            </summary>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IWmsAmendManager.GetPageAsync(System.Int32,System.Int32,System.Guid,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.String,System.String)">
+            <summary>
+            查询分页
+            </summary>
+            <param name="pageIndex">页码</param>
+            <param name="pageSize">页数</param>
+            <param name="warehouseId">仓库id</param>
+            <param name="beginTime">开始时间</param>
+            <param name="endTime">结束时间</param>
+            <param name="keyType">查询类型（0 单号 1 名称 2 型号）</param>
+            <param name="key">关键字</param>
+            <param name="SN">序列号</param>
+            <returns>分页</returns>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IWmsAmendManager.ExportExcelAsync(System.Guid,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.String,System.String)">
+            <summary>
+            导出
+            </summary>
+            <param name="warehouseId">仓库id</param>
+            <param name="beginTime">开始时间</param>
+            <param name="endTime">结束时间</param>
+            <param name="keyType">查询类型（0 单号 1 名称 2 型号）</param>
+            <param name="key">关键字</param>
+            <param name="SN">序列号</param>
+            <returns>导出结果</returns>
+        </member>
+        <member name="T:WMS.Domain.Interfaces.IWmsApplyManager">
+            <summary>
+            领域服务：申领信息
+            </summary>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IWmsApplyManager.GetPageAsync(System.Int32,System.Int32,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.Int32,System.String)">
+            <summary>
+            分页
+            </summary>
+            <param name="pageIndex">页码</param>
+            <param name="pageSize">页数</param>
+            <param name="beginTime">开始时间</param>
+            <param name="endTime">结束时间</param>
+            <param name="state">状态</param>
+            <param name="keyType">查询类型（0 名称 1 型号 2 用途）</param>
+            <param name="key">关键字</param>
+            <returns>分页</returns>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IWmsApplyManager.AddAsync(System.Guid,WMS.Domain.Models.WmsLoginUser,WMS.Domain.Models.WmsApplyForm)">
+            <summary>
+            添加
+            </summary>
+            <param name="tenantId">租户Id</param>
+            <param name="loginUser">创建者</param>
+            <param name="entity">实体</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IWmsApplyManager.DeleteAsync(System.Guid)">
+            <summary>
+            删除
+            </summary>
+            <param name="id">申领Id</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IWmsApplyManager.ExportExcelAsync(System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.Int32,System.String)">
+            <summary>
+            导出
+            </summary>
+            <param name="beginTime">开始时间</param>
+            <param name="endTime">结束时间</param>
+            <param name="state">状态</param>
+            <param name="keyType">查询类型（0 名称 1 型号）</param>
+            <param name="key">关键字</param>
+            <returns></returns>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IWmsApplyManager.GetTheGoods(System.Guid)">
+            <summary>
+            按物品ID进行仓库表查询
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IWmsApplyManager.AddExRecordsAsync(WMS.Domain.Models.WmsLoginUser,System.Guid,System.Collections.Generic.IEnumerable{WMS.Domain.Models.WmsExWarehouseForm})">
+            <summary>
+            申领出库
+            </summary>
+            <param name="loginUser">创建者</param>
+            <param name="id">申领明细id</param>
+            <param name="entities">出库列表</param>
+            <returns>结果</returns>
+        </member>
+        <member name="T:WMS.Domain.Interfaces.IWmsCheckManager">
+            <summary>
+            领域服务：盘点信息
+            </summary>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IWmsCheckManager.GetPageAsync(System.Int32,System.Int32,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32)">
+            <summary>
+            查询分页
+            </summary>
+            <param name="pageIndex">页码</param>
+            <param name="pageSize">页数</param>
+            <param name="beginTime">开始时间</param>
+            <param name="endTime">结束时间</param>
+            <param name="state">状态（0 待盘点 1 已盘点）</param>
+            <returns>分页</returns>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IWmsCheckManager.AddAsync(System.Guid,WMS.Domain.Models.WmsLoginUser,WMS.Domain.Models.WmsCheckForm)">
+            <summary>
+            添加
+            </summary>
+            <param name="tenantId">机构id</param>
+            <param name="loginUser">创建者</param>
+            <param name="entity">实体</param>
+            <returns>添加结果</returns>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IWmsCheckManager.UpdateAsync(System.Collections.Generic.IEnumerable{WMS.Domain.Models.WmsCheckResultForm})">
+            <summary>
+            填写盘点结果
+            </summary>
+            <param name="entities">实体</param>
+            <returns>添加结果</returns>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IWmsCheckManager.AddAmendAsync(System.Guid,WMS.Domain.Models.WmsLoginUser,WMS.Domain.Models.WmsAmendForm)">
+            <summary>
+            添加修正信息
+            </summary>
+            <param name="tenantId">机构id</param>
+            <param name="loginUser">创建者</param>
+             <param name="entity">实体</param>
+            <returns></returns>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IWmsCheckManager.ExportExcelAsync(System.Guid,System.Int32,System.Int32,System.String)">
+            <summary>
+            盘点明细导出
+            </summary>
+            <param name="checkWarehouseId">仓库id</param>
+            <param name="state">盘点状态 (0:未盘 1：已盘)</param>
+            <param name="keyType">查询类型（0 名称 1 规格 ）</param>
+            <param name="key">关键字</param>
+            <returns>导出结果</returns>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IWmsCheckManager.DeleteAsync(System.Guid)">
+            <summary>
+            删除
+            </summary>
+            <param name="id">盘点Id</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IWmsCheckManager.EndAsync(System.Guid,System.Int32,System.Int32)">
+            <summary>
+            结束盘点
+            </summary>
+            <param name="id">盘点Id</param>
+            <returns>结果</returns>
+        </member>
+        <member name="T:WMS.Domain.Interfaces.IWmsExWarehouseManager">
+            <summary>
+            领域服务：出库
+            </summary>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IWmsExWarehouseManager.GetPageAsync(System.Int32,System.Int32,System.Guid,System.Int32,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime})">
+            <summary>
+            获取分页
+            </summary>
+            <param name="pageIndex">页码</param>
+            <param name="pageSize">页数</param>
+            <param name="warehouseId">仓库id</param>
+            <param name="keyType">查询类型（0 名称 1 规格 2 序列号）</param>
+            <param name="key">关键字</param>
+            <param name="beginTime">开始时间</param>
+            <param name="endTime">结束时间</param>
+            <returns>分页</returns>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IWmsExWarehouseManager.AddAsync(WMS.Domain.Models.WmsLoginUser,System.Collections.Generic.IEnumerable{WMS.Domain.Models.WmsExWarehouseForm})">
+            <summary>
+            添加
+            </summary>
+            <param name="loginUser">创建者</param>
+            <param name="entities">实体</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IWmsExWarehouseManager.DeleteAsync(System.Guid,System.Guid)">
+            <summary>
+            删除
+            </summary>
+            <param name="warehouseId">创建者</param>
+            <param name="id">入库物品Id</param>
+            <returns></returns>
+        </member>
+        <member name="T:WMS.Domain.Interfaces.IWmsGoodsManager">
+            <summary>
+            领域服务：物品信息
+            </summary>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IWmsGoodsManager.GetPageAsync(System.Int32,System.Int32,System.Guid,System.Int32,System.String)">
+            <summary>
+            获取分页
+            </summary>
+            <param name="pageIndex">页码</param>
+            <param name="pageSize">页面大小</param>
+            <param name="typeId">分类Id</param>
+            <param name="keyType">关键字类型（0编号 1名称）</param>
+            <param name="key">关键字</param>
+            <returns>分页</returns>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IWmsGoodsManager.AddAsync(System.Guid,WMS.Domain.Models.WmsGoodsForm)">
+            <summary>
+            添加
+            </summary>
+            <param name="tenantId">租户id</param>
+            <param name="entity">实体</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IWmsGoodsManager.UpdateAsync(WMS.Domain.Models.WmsGoodsForm)">
+            <summary>
+            修改
+            </summary>
+            <param name="entity">实体</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IWmsGoodsManager.DeleteAsync(System.Guid)">
+            <summary>
+            删除
+            </summary>
+            <param name="id">实体</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IWmsGoodsManager.UploadImageAsync(System.Guid,System.Guid,System.String,System.IO.Stream)">
+            <summary>
+            上传图片
+            </summary>
+            <param name="tenantId">机构id</param>
+            <param name="id">物品id</param>
+            <param name="filename">文件名</param>
+            <param name="file">文件流</param>
+            <returns>上传结果</returns>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IWmsGoodsManager.ExportExcelAsync(System.Guid)">
+            <summary>
+            导出Excel
+            </summary>
+            <param name="typeId">分类Id</param>
+            <returns>字节流</returns>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IWmsGoodsManager.DownloadTemplate">
+            <summary>
+            下载模板
+            </summary>
+            <param name="typeId">分类id</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IWmsGoodsManager.ImportExcelAsync(System.Guid,System.Collections.Generic.IEnumerable{WMS.Domain.Models.WmsGoodsImportForm})">
+            <summary>
+            导入Excel
+            </summary>
+            <param name="tenantId">租户id</param>
+            <param name="data">Excel导入对象</param>
+            <returns>消息</returns>
+        </member>
+        <member name="T:WMS.Domain.Interfaces.IWmsGoodsTypeManager">
+            <summary>
+            领域服务：物品分类
+            </summary>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IWmsGoodsTypeManager.GetListAsync">
+            <summary>
+            获取列表
+            </summary>
+            <returns>列表</returns>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IWmsGoodsTypeManager.AddAsync(System.Guid,WMS.Domain.Models.WmsGoodsTypeForm)">
+            <summary>
+            添加
+            </summary>
+            <param name="tenantId">租户id</param>
+            <param name="entity">实体</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IWmsGoodsTypeManager.UpdateAsync(WMS.Domain.Models.WmsGoodsTypeForm)">
+            <summary>
+            修改
+            </summary>
+            <param name="entity">实体</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IWmsGoodsTypeManager.DeleteAsync(System.Guid)">
+            <summary>
+            删除
+            </summary>
+            <param name="id">分类Id</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IWmsGoodsTypeManager.SortAsync(System.Guid,WMS.Domain.Models.WmsGoodsTypeSortForm)">
+            <summary>
+            排序
+            </summary>
+            <param name="id">分类id</param>
+            <param name="entity">实体</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IWmsGoodsTypeManager.ShiftAsync(WMS.Domain.Models.WmsGoodsTypeShiftForm)">
+            <summary>
+            位移排序
+            </summary>
+            <param name="entity">实体</param>
+            <returns>结果</returns>
+        </member>
+        <member name="T:WMS.Domain.Interfaces.IWmsInventoryManager">
+            <summary>
+            领域服务：库存
+            </summary>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IWmsInventoryManager.GetPageAsync(System.Int32,System.Int32,System.Guid,System.Int32,System.String)">
+            <summary>
+            获取分页
+            </summary>
+            <param name="pageIndex">页码</param>
+            <param name="pageSize">页面大小</param>
+            <param name="warehouseId">仓库id</param>
+            <param name="keyType">关键字类型（0名称 1编号 2SN码）</param>
+            <param name="key">关键字</param>
+            <returns>分页</returns>
+        </member>
+        <member name="T:WMS.Domain.Interfaces.IWmsInWarehouseManager">
+            <summary>
+            领域服务：入库
+            </summary>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IWmsInWarehouseManager.GetPageAsync(System.Int32,System.Int32,System.Guid,System.Int32,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime})">
+            <summary>
+            获取分页
+            </summary>
+            <param name="pageIndex">页码</param>
+            <param name="pageSize">页数</param>
+            <param name="warehouseId">仓库id</param>
+            <param name="keyType">查询类型（0名称 1编号 2SN码）</param>
+            <param name="key"></param>
+            <param name="beginTime">开始时间</param>
+            <param name="endTime">结束时间</param>
+            <returns>分页</returns>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IWmsInWarehouseManager.AddAsync(WMS.Domain.Models.WmsLoginUser,System.Guid,System.Collections.Generic.IEnumerable{WMS.Domain.Models.WmsInWarehouseForm})">
+            <summary>
+            添加
+            </summary>
+            <param name="loginUser">创建者</param>
+            <param name="warehouseId">仓库id</param>
+            <param name="entities">实体集合</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IWmsInWarehouseManager.DeleteAsync(System.Guid,System.Guid)">
+            <summary>
+            删除
+            </summary>
+            <param name="warehouseId">创建者</param>
+            <param name="id">入库物品Id</param>
+            <returns></returns>
+        </member>
+        <member name="T:WMS.Domain.Interfaces.IWmsSupplierManager">
+            <summary>
+            领域服务：供应商
+            </summary>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IWmsSupplierManager.GetPageAsync(System.Int32,System.Int32,System.Int32,System.String)">
+            <summary>
+            获取分页
+            </summary>
+            <param name="pageIndex">页码</param>
+            <param name="pageSize">页数</param>
+            <param name="keyType">关键字类型（0名称 1简称 2联系人 3联系人电话 4产品范围）</param>
+            <param name="key">关键字</param>
+            <returns>分页</returns>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IWmsSupplierManager.AddAsync(System.Guid,WMS.Domain.Models.WmsSupplierForm)">
+            <summary>
+            添加
+            </summary>
+            <param name="tenantId">租户id</param>
+            <param name="entity">实体</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IWmsSupplierManager.UpdateAsync(WMS.Domain.Models.WmsSupplierForm)">
+            <summary>
+            修改
+            </summary>
+            <param name="entity">实体</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IWmsSupplierManager.DeleteAsync(System.Guid)">
+            <summary>
+            删除
+            </summary>
+            <param name="id">供应商Id</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IWmsSupplierManager.ExportExcelAsync">
+            <summary>
+            导出
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:WMS.Domain.Interfaces.IWmsWarehouseManager">
+            <summary>
+            领域服务：仓库
+            </summary>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IWmsWarehouseManager.GetPageAsync(System.Int32,System.Int32,System.String)">
+            <summary>
+            获取分页
+            </summary>
+            <param name="pageIndex">页码</param>
+            <param name="pageSize">页面大小</param>
+            <param name="key">关键字</param>
+            <returns>分页</returns>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IWmsWarehouseManager.AddAsync(System.Guid,WMS.Domain.Models.WmsWarehouseForm)">
+            <summary>
+            添加
+            </summary>
+            <param name="tenantId">租户id</param>
+            <param name="entity">实体</param>
+            <returns></returns>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IWmsWarehouseManager.UpdateAsync(WMS.Domain.Models.WmsWarehouseForm)">
+            <summary>
+            修改
+            </summary>
+            <param name="entity">实体</param>
+            <returns></returns>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IWmsWarehouseManager.DeleteAsync(System.Guid)">
+            <summary>
+            删除
+            </summary>
+            <param name="id">实体</param>
+            <returns></returns>
+        </member>
+        <member name="T:WMS.Domain.Interfaces.IWmsAllotRepository">
+            <summary>
+            领域服务：调拨信息
+            </summary>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IWmsAllotRepository.GetPageAsync(System.Int32,System.Int32,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.String)">
+            <summary>
+            查询分页
+            </summary>
+            <param name="pageIndex">页码</param>
+            <param name="pageSize">页数</param>
+            <param name="beginTime">开始时间</param>
+            <param name="endTime">结束时间</param>
+            <param name="keyType">查询类型（0 名称 1 型号 2 序列号）</param>
+            <param name="key">关键字</param>
+            <returns>分页</returns>
+        </member>
+        <member name="M:WMS.Domain.Interfaces.IWmsAllotRepository.GetListAsync(System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.String)">
+            <summary>
+            导出查询
+            </summary>
+            <param name="beginTime">开始时间</param>
+            <param name="endTime">结束时间</param>
+            <param name="keyType">查询类型（0 名称 1 型号）</param>
+            <param name="key">关键字</param>
+            <returns></returns>
+        </member>
+        <member name="T:WMS.Domain.Models.PmsDetailForm">
+            <summary>
+            表单：申购明细
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.PmsDetailForm.applyid">
+            <summary>
+            申购id
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.PmsDetailForm.DetailState">
+            <summary>
+            处理状态 :0完成 1：取消
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.PmsDetailForm.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="T:WMS.Domain.Models.PmsProcureForm">
+            <summary>
+            表单：采购
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.PmsProcureForm.DetailState">
+            <summary>
+            处理状态 3:已完成 4：已取消
+            </summary>
+        </member>
+        <member name="T:WMS.Domain.Models.PmsPurchaseDetailForm">
+            <summary>
+            表单：申购明细表
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.PmsPurchaseDetailForm.ProcureAmount">
+            <summary>
+            采购数量
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.PmsPurchaseDetailForm.ProcurePrice">
+            <summary>
+            采购单价
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.PmsPurchaseDetailForm.ProcureMoney">
+            <summary>
+            采购金额
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.PmsPurchaseDetailForm.PmsSupplierId">
+            <summary>
+            供应商
+            </summary>
+        </member>
+        <member name="T:WMS.Domain.Models.PmsPurchaseForm">
+            <summary>
+            表单：申购信息
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.PmsPurchaseForm.Id">
+            <summary>
+            申购Id
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.goods.Name">
+            <summary>
+            物品名称
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.goods.Specification">
+            <summary>
+            规格型号
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.goods.Unit">
+            <summary>
+            单位
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.goods.ApplyAmount">
+            <summary>
+            申购数量
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.goods.Purpose">
+            <summary>
+            用途
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.goods.Describe">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="T:WMS.Domain.Models.PmsSupplierForm">
+            <summary>
+            表单：供应商表
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.PmsSupplierForm.Name">
+            <summary>
+            供应商名称
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.PmsSupplierForm.Brand">
+            <summary>
+             品牌
+             </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.PmsSupplierForm.Contacts">
+            <summary>
+            联系人
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.PmsSupplierForm.Phone">
+            <summary>
+            联系电话
+             </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.PmsSupplierForm.QQ">
+            <summary>
+            QQ号码
+             </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.PmsSupplierForm.Mailbox">
+            <summary>
+            邮箱
+             </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.PmsSupplierForm.Address">
+            <summary>
+            联系地址
+             </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.PmsSupplierForm.ProductScope">
+            <summary>
+            产品范围
+            </summary>
+        </member>
+        <member name="T:WMS.Domain.Models.WmsAllotDetailForm">
+            <summary>
+            表单：调拨明细
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsAllotDetailForm.Code">
+            <summary>
+            识别序列号
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsAllotDetailForm.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="T:WMS.Domain.Models.WmsAllotForm">
+            <summary>
+            表单：调拨
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsAllotForm.Id">
+            <summary>
+            库存id
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsAllotForm.Quantity">
+            <summary>
+            入库数量
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsAllotForm.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsAllotForm.Details">
+            <summary>
+            序列号明细
+            </summary>
+        </member>
+        <member name="T:WMS.Domain.Models.WmsAmendDetailForm">
+            <summary>
+            表单：修正明细信息
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsAmendDetailForm.Code">
+            <summary>
+            唯一序列号
+            </summary>
+        </member>
+        <member name="M:WMS.Domain.Models.WmsAmendForm.#ctor">
+            <summary>
+            表单：修正信息
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsAmendForm.CheckDetailId">
+            <summary>
+            盘点明细id
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsAmendForm.ActualInventory">
+            <summary>
+            实际库存
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsAmendForm.InventoryId">
+            <summary>
+            库存id
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsAmendForm.DifferencesAmount">
+            <summary>
+            差异数量
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsAmendForm.Quantity">
+            <summary>
+            出/入库数量
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsAmendForm.AmendState">
+            <summary>
+            修正状态 0：盘点出库 1：盘点入库
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsAmendForm.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="T:WMS.Domain.Models.WmsApplyDetailForm">
+            <summary>
+            表单：申领明细
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsApplyDetailForm.WmsGoodsId">
+            <summary>
+            物品表Id
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsApplyDetailForm.ApplyAmount">
+            <summary>
+            申领数量
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsApplyDetailForm.Purpose">
+            <summary>
+            用途
+            </summary>
+        </member>
+        <member name="T:WMS.Domain.Models.WmsApplyForm">
+            <summary>
+            表单：申领表
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsApplyForm.Details">
+            <summary>
+            申领明细
+            </summary>
+        </member>
+        <member name="T:WMS.Domain.Models.WmsCheckDetailForm">
+            <summary>
+            表单：盘点详情表
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsCheckDetailForm.InventoryId">
+            <summary>
+            库存Id
+            </summary>
+        </member>
+        <member name="T:WMS.Domain.Models.WmsCheckForm">
+            <summary>
+            表单：盘点信息表
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsCheckForm.Details">
+            <summary>
+            盘点明细
+            </summary>
+        </member>
+        <member name="T:WMS.Domain.Models.WmsCheckResultForm">
+            <summary>
+            表单：盘点结果
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsCheckResultForm.Id">
+            <summary>
+            盘点明细id
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsCheckResultForm.ActualInventory">
+            <summary>
+            实际库存
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsCheckResultForm.DifferencesAmount">
+            <summary>
+            差异数量
+            </summary>
+        </member>
+        <member name="T:WMS.Domain.Models.WmsExWarehouseDetailForm">
+            <summary>
+            表单：出库详情
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsExWarehouseDetailForm.Code">
+            <summary>
+            识别序列号
+            </summary>
+        </member>
+        <member name="T:WMS.Domain.Models.WmsExWarehouseForm">
+            <summary>
+            表单：出库
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsExWarehouseForm.InventoryId">
+            <summary>
+            库存id
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsExWarehouseForm.Quantity">
+            <summary>
+            出库数量
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsExWarehouseForm.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsExWarehouseForm.Details">
+            <summary>
+            序列号明细
+            </summary>
+        </member>
+        <member name="T:WMS.Domain.Models.WmsGoodsForm">
+            <summary>
+            表单：物品表
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsGoodsForm.TypeId">
+            <summary>
+            分类表Id
+            </summary>      
+        </member>
+        <member name="P:WMS.Domain.Models.WmsGoodsForm.Number">
+            <summary>
+            编号
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsGoodsForm.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsGoodsForm.Specification">
+            <summary>
+            规格型号
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsGoodsForm.Unit">
+            <summary>
+            单位
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsGoodsForm.IconUrl">
+            <summary>
+            图片路径
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsGoodsForm.Description">
+            <summary>
+            物品描述
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsGoodsForm.IsNeed">
+            <summary>
+            是否需要序列号
+            </summary>
+        </member>
+        <member name="T:WMS.Domain.Models.WmsGoodsImportForm">
+            <summary>
+            表单：物品资料导入
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsGoodsImportForm.TypeName">
+            <summary>
+            分类名称
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsGoodsImportForm.Number">
+            <summary>
+            编号
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsGoodsImportForm.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsGoodsImportForm.Specification">
+            <summary>
+            规格型号
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsGoodsImportForm.Unit">
+            <summary>
+            单位
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsGoodsImportForm.IsNeed">
+            <summary>
+            是否需要序列号
+            </summary>
+        </member>
+        <member name="T:WMS.Domain.Models.WmsGoodsTypeForm">
+            <summary>
+            表单:分类表
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsGoodsTypeForm.ParentId">
+            <summary>
+            上级Id
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsGoodsTypeForm.Name">
+            <summary>
+            分类名称
+            </summary>
+        </member>
+        <member name="T:WMS.Domain.Models.WmsGoodsTypeShiftForm">
+            <summary>
+            实体物品分类排序
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsGoodsTypeShiftForm.ParentId">
+            <summary>
+            转入父级id
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsGoodsTypeShiftForm.Id">
+            <summary>
+            分类id
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsGoodsTypeShiftForm.SortNumber">
+            <summary>
+            插入的序号
+            </summary>
+        </member>
+        <member name="T:WMS.Domain.Models.WmsGoodsTypeSortForm">
+            <summary>
+            表单：物品分类排序
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsGoodsTypeSortForm.SortNumber">
+            <summary>
+            排序号 由大到小
+            </summary>
+        </member>
+        <member name="T:WMS.Domain.Models.WmsInWarehouseDetailForm">
+            <summary>
+            表单：入库详情
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsInWarehouseDetailForm.Code">
+            <summary>
+            识别序列号
+            </summary>
+        </member>
+        <member name="T:WMS.Domain.Models.WmsInWarehouseForm">
+            <summary>
+            表单：入库记录
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsInWarehouseForm.GoodsId">
+            <summary>
+            物品id
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsInWarehouseForm.Quantity">
+            <summary>
+            入库数量
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsInWarehouseForm.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsInWarehouseForm.Details">
+            <summary>
+            序列号明细
+            </summary>
+        </member>
+        <member name="T:WMS.Domain.Models.WmsSupplierForm">
+            <summary>
+            表单：供应商表
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsSupplierForm.Name">
+            <summary>
+            供应商名称
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsSupplierForm.Brand">
+            <summary>
+             品牌
+             </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsSupplierForm.Contacts">
+            <summary>
+            联系人
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsSupplierForm.Phone">
+            <summary>
+            联系电话
+             </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsSupplierForm.QQ">
+            <summary>
+            QQ号码
+             </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsSupplierForm.Mailbox">
+            <summary>
+            邮箱
+             </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsSupplierForm.Address">
+            <summary>
+            联系地址
+             </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsSupplierForm.ProductScope">
+            <summary>
+            产品范围
+            </summary>
+        </member>
+        <member name="T:WMS.Domain.Models.WmsWarehouseForm">
+            <summary>
+            表单：仓库表
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsWarehouseForm.Name">
+            <summary>
+            仓库名称
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsWarehouseForm.Place">
+            <summary>
+            所在地点
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsWarehouseForm.PersonName">
+            <summary>
+            负责人员
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.Models.WmsWarehouseForm.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="T:WMS.Domain.PmsPurchaseDetailManager">
+            <summary>
+            领域服务：申购明细
+            </summary>
+        </member>
+        <member name="M:WMS.Domain.PmsPurchaseDetailManager.GetWithProcureAsync(System.Int32,System.Int32,System.DateTime,System.DateTime,System.Int32,System.Int32,System.String)">
+            <summary>
+            采购分页
+            </summary>
+            <param name="pageIndex">页码</param>
+            <param name="pageSize">页数</param>
+            <param name="beginTime">开始时间</param>
+            <param name="endTime">结束时间</param>
+            <param name="state">状态</param>
+            <param name="keyType">查询类型（0 名称 1 型号）</param>
+            <param name="key">关键字</param>
+            <returns>分页</returns>
+        </member>
+        <member name="M:WMS.Domain.PmsPurchaseDetailManager.UpdateAsync(WMS.Domain.Models.PmsProcureForm)">
+            <summary>
+            修改
+            </summary>
+            <param name="entity">实体</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:WMS.Domain.PmsPurchaseDetailManager.ExportListAsync(System.DateTime,System.DateTime,System.Int32,System.Int32,System.String)">
+            <summary>
+            采购导出
+            </summary>
+            <param name="beginTime">开始时间</param>
+            <param name="endTime">结束时间</param>
+            <param name="state">状态</param>
+             <param name="keyType">查询类型（0 名称 1 型号）</param>
+            <param name="key">关键字</param>
+            <returns>查询结果</returns>
+        </member>
+        <member name="T:WMS.Domain.PmsPurchaseManager">
+            <summary>
+            领域服务：申购信息
+            </summary>
+        </member>
+        <member name="M:WMS.Domain.PmsPurchaseManager.AddAsync(WMS.Domain.Models.WmsLoginUser,System.Guid,WMS.Domain.Models.PmsPurchaseForm)">
+             <summary>
+            添加
+             </summary>
+             <param name="loginUser">登录用户</param>
+             <param name="tenantId">租户id</param>
+             <param name="entity">实体</param>
+             <returns>结果</returns>
+        </member>
+        <member name="M:WMS.Domain.PmsPurchaseManager.UpdateAsync(WMS.Domain.Models.PmsPurchaseDetailForm,WMS.Domain.Models.WmsLoginUser)">
+            <summary>
+            修改 :物品估价
+            </summary>
+            <param name="entity">实体</param>
+            <param name="loginUser">用户</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:WMS.Domain.PmsPurchaseManager.DeleteAsync(System.Guid)">
+            <summary>
+            删除
+            </summary>
+            <param name="id">id</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:WMS.Domain.PmsPurchaseManager.GetPageAsync(System.Int32,System.Int32,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.Int32,System.String)">
+            <summary>
+            查询分页
+            </summary>
+            <param name="pageIndex">页码</param>
+            <param name="pageSize">页数</param>
+            <param name="beginTime">开始时间</param>
+            <param name="endTime">结束时间</param>
+            <param name="state">状态</param>
+            <param name="keyType">查询类型（0 名称 1 型号 2 用途）</param>
+            <param name="key">关键字</param>
+            <returns>分页</returns>
+        </member>
+        <member name="M:WMS.Domain.PmsPurchaseManager.UploadImageAsync(System.Guid,System.Guid,System.String,System.IO.Stream)">
+            <summary>
+            上传图片
+            </summary>
+            <param name="tenantId">机构id</param>
+            <param name="id">申购Id</param>
+            <param name="fileName">文件名</param>
+            <param name="file">文件流</param>
+            <returns>上传结果</returns>
+        </member>
+        <member name="M:WMS.Domain.PmsPurchaseManager.ExportExcelAsync(System.DateTime,System.DateTime,System.Int32,System.Int32,System.String)">
+            <summary>
+            导出
+            </summary>
+            <param name="beginTime">开始时间</param>
+            <param name="endTime">结束时间</param>
+            <param name="state">状态</param>
+            <param name="keyType">查询类型（0 名称 1 型号 2 用途）</param>
+            <param name="key">关键字</param>
+            <returns>导出结果</returns>
+        </member>
+        <member name="M:WMS.Domain.PmsPurchaseManager.UpdateVerifyAsync(WMS.Domain.Models.PmsDetailForm,WMS.Domain.Models.WmsLoginUser)">
+            <summary>
+            审核修改
+            </summary>
+            <param name="entity">实体</param>
+            <param name="loginUser">用户</param>
+            <returns>审核结果</returns>
+        </member>
+        <member name="T:WMS.Domain.PmsSupplierManager">
+            <summary>
+            领域服务：供应商
+            </summary>
+        </member>
+        <member name="M:WMS.Domain.PmsSupplierManager.GetPageAsync(System.Int32,System.Int32,System.Int32,System.String)">
+            <summary>
+            获取分页
+            </summary>
+            <param name="pageIndex">页码</param>
+            <param name="pageSize">页数</param>
+            <param name="keyType">关键字类型（0名称 1简称 2联系人 3联系人电话 4产品范围）</param>
+            <param name="key">关键字</param>
+            <returns>分页</returns>
+        </member>
+        <member name="M:WMS.Domain.PmsSupplierManager.AddAsync(System.Guid,WMS.Domain.Models.WmsSupplierForm)">
+            <summary>
+            添加
+            </summary>
+            <param name="tenantId">租户id</param>
+            <param name="entity">实体</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:WMS.Domain.PmsSupplierManager.UpdateAsync(WMS.Domain.Models.WmsSupplierForm)">
+            <summary>
+            修改
+            </summary>
+            <param name="entity">实体</param>
+            <returns></returns>
+        </member>
+        <member name="M:WMS.Domain.PmsSupplierManager.DeleteAsync(System.Guid)">
+            <summary>
+            删除
+            </summary>
+            <param name="id">供应商id</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:WMS.Domain.PmsSupplierManager.ExportExcelAsync">
+            <summary>
+            导出
+            </summary>
+            <returns>字节流</returns>
+        </member>
+        <member name="T:WMS.Domain.Repositorys.IPmsPurchaseDetailRepository">
+            <summary>
+            仓储：申购明细
+            </summary>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IPmsPurchaseDetailRepository.GetListAsync(System.Int32,System.String)">
+            <summary>
+            查询
+            </summary>
+            <param name="keyType">查询类型（0 名称 1 型号 2 用途）</param>
+            <param name="key">关键字</param>
+            <returns>查询结果</returns>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IPmsPurchaseDetailRepository.GetWithProcureAsync(System.Int32,System.Int32,System.DateTime,System.DateTime,System.Int32,System.Int32,System.String)">
+            <summary>
+            采购分页
+            </summary>
+            <param name="pageIndex">页码</param>
+            <param name="pageSize">页数</param>
+            <param name="beginTime">开始时间</param>
+            <param name="endTime">结束时间</param>
+            <param name="state">状态</param>
+            <param name="keyType">查询类型（0 名称 1 型号）</param>
+            <param name="key">关键字</param>
+            <returns>分页</returns>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IPmsPurchaseDetailRepository.GetListWithPurchaseAsync(System.DateTime,System.DateTime,System.Int32,System.Int32,System.String)">
+            <summary>
+            导出查询(含申购表)
+            </summary>
+            <param name="beginTime">开始时间</param>
+            <param name="endTime">结束时间</param>
+            <param name="state">状态</param>
+             <param name="keyType">查询类型（0 名称 1 型号）</param>
+            <param name="key">关键字</param>
+            <returns>查询结果</returns>
+        </member>
+        <member name="T:WMS.Domain.Repositorys.IPmsPurchaseRepository">
+            <summary>
+            仓储：申购信息
+            </summary>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IPmsPurchaseRepository.GetPageAsync(System.Int32,System.Int32,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.Int32,System.String)">
+            <summary>
+            查询分页
+            </summary>
+            <param name="pageIndex">页码</param>
+            <param name="pageSize">页数</param>
+            <param name="beginTime">开始时间</param>
+            <param name="endTime">结束时间</param>
+            <param name="state">状态</param>
+            <param name="keyType">查询类型（0 名称 1 型号 2 用途）</param>
+            <param name="key">关键字</param>
+            <returns>分页</returns>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IPmsPurchaseRepository.GetListAsync(System.DateTime,System.DateTime,System.Int32)">
+            <summary>
+            导出查询
+            </summary>
+            <param name="beginTime">开始时间</param>
+            <param name="endTime">结束时间</param>
+            <param name="state">状态</param>
+            <returns>查询结果</returns>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IPmsPurchaseRepository.GetListWithDetailAsync(System.DateTime,System.DateTime,System.Guid)">
+            <summary>
+            查询实体(含详情)
+            </summary>
+            <param name="beginTime">开始时间</param>
+            <param name="endTime">结束时间</param>
+            <returns>查询结果</returns>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IPmsPurchaseRepository.GetWithDetailAsync(System.Guid)">
+            <summary>
+            查询实体(含详情)
+            </summary>
+            <returns>查询结果</returns>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IPmsPurchaseRepository.GetListAsync(System.Guid)">
+            <summary>
+            查询实体
+            </summary>
+            <param name="Id">Id</param>
+            <returns>查询结果</returns>
+        </member>
+        <member name="T:WMS.Domain.Repositorys.IPmsSupplierRepository">
+            <summary>
+            仓储：供应商
+            </summary>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IPmsSupplierRepository.GetPageAsync(System.Int32,System.Int32,System.Int32,System.String)">
+            <summary>
+            查询分页
+            </summary>
+            <param name="pageIndex">页码</param>
+            <param name="pageSize">页数</param>
+            <param name="keyType">关键字类型（0名称 1简称 2联系人 3联系人电话 4产品范围）</param>
+            <param name="key">关键字</param>
+            <returns>分页</returns>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IPmsSupplierRepository.GetAsync(System.String,System.String)">
+            <summary>
+            查询实体
+            </summary>
+            <param name="name">名称</param>
+            <param name="brand">品牌</param>
+            <returns>实体</returns>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IPmsSupplierRepository.GetAsync(System.Nullable{System.Guid})">
+            <summary>
+            根据id查询实体
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WMS.Domain.Repositorys.IWmsAllotDetailRepository">
+            <summary>
+            仓储：调拨明细
+            </summary>
+        </member>
+        <member name="T:WMS.Domain.Repositorys.IWmsAmendRepository">
+            <summary>
+            领域服务：修正信息
+            </summary>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IWmsAmendRepository.GetPageAsync(System.Int32,System.Int32,System.Guid,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.String,System.String)">
+            <summary>
+            查询分页（含详情）
+            </summary>
+            <param name="pageIndex">页码</param>
+            <param name="pageSize">页数</param>
+            <param name="warehouseId">仓库id</param>
+            <param name="beginTime">开始时间</param>
+            <param name="endTime">结束时间</param>
+            <param name="keyType">查询类型（0 单号 1 名称 2 型号）</param>
+            <param name="key">关键字</param>
+            <param name="SN">序列号</param>
+            <returns>分页</returns>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IWmsAmendRepository.GetListAsync(System.Guid,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.String,System.String)">
+            <summary>
+            导出查询（含详情）
+            </summary>
+            <param name="warehouseId">仓库id</param>
+            <param name="beginTime">开始时间</param>
+            <param name="endTime">结束时间</param>
+            <param name="keyType">查询类型（0 单号 1 名称 2 型号）</param>
+            <param name="key">关键字</param>
+            <param name="SN">序列号</param>
+            <returns>修正信息列表</returns>
+        </member>
+        <member name="T:WMS.Domain.Repositorys.IWmsApplyDetailRepository">
+            <summary>
+            仓储：申领明细
+            </summary>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IWmsApplyDetailRepository.GetListAsync(System.Int32,System.String)">
+            <summary>
+            导出查询
+            </summary>
+            <param name="keyType">查询类型（0 名称 1 型号）</param>
+            <param name="key">关键字</param>
+            <returns></returns>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IWmsApplyDetailRepository.GetAsync(System.Guid)">
+            <summary>
+            查询(含申领表)
+            </summary>
+            <param name="id">明细Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IWmsApplyDetailRepository.GetListAsync(System.Guid)">
+            <summary>
+            查询
+            </summary>
+            <param name="id">明细Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IWmsApplyDetailRepository.GetListWithContactAsync(System.Guid)">
+            <summary>
+            查询实体（含关联表）
+            </summary>
+            <param name="applyId">申领id</param>
+            <returns></returns>
+        </member>
+        <member name="T:WMS.Domain.Repositorys.IWmsApplyExContactRepository">
+            <summary>
+            仓储:申领-出库关联表
+            </summary>
+        </member>
+        <member name="T:WMS.Domain.Repositorys.IWmsApplyRepository">
+            <summary>
+            仓储：申领信息
+            </summary>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IWmsApplyRepository.GetPageAsync(System.Int32,System.Int32,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.Int32,System.String)">
+            <summary>
+            查询分页
+            </summary>
+            <param name="pageIndex">页码</param>
+            <param name="pageSize">页数</param>
+            <param name="beginTime">开始时间</param>
+            <param name="endTime">结束时间</param>
+            <param name="state">状态</param>
+            <param name="keyType">查询类型（0 名称 1 型号 2 用途）</param>
+            <param name="key">关键字</param>
+            <returns>分页</returns>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IWmsApplyRepository.GetListAsync(System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32)">
+            <summary>
+            导出查询
+            </summary>
+            <param name="beginTime">开始时间</param>
+            <param name="endTime">结束时间</param>
+            <param name="state">状态</param>
+            <returns></returns>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IWmsApplyRepository.GetListWithDetailAsync(System.Guid)">
+            <summary>
+            查询实体（含详情）
+            </summary>
+            <param name="applyId">申领id</param>
+            <returns></returns>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IWmsApplyRepository.GetAsync(System.Guid)">
+            <summary>
+            查询实体（含详情）
+            </summary>
+            <param name="applyId">申领id</param>
+            <returns></returns>
+        </member>
+        <member name="T:WMS.Domain.Repositorys.IWmsCheckDetailRepository">
+            <summary>
+            仓储：盘点明细信息
+            </summary>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IWmsCheckDetailRepository.GetWithCheckAsync(System.Guid)">
+            <summary>
+            查询差异数量不为零的列表
+            </summary>
+            <param name="checkId">盘点id</param>
+            <returns>盘点明细列表</returns>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IWmsCheckDetailRepository.GetListAsync(System.Guid)">
+            <summary>
+            查询列表
+            </summary>
+            <param name="id">明细id</param>
+            <returns>盘点明细列表</returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:WMS.Domain.Repositorys.IWmsCheckDetailRepository.GetListAsync(System.Guid,System.Guid,System.Int32,System.Int32,System.String,System.Collections.Generic.List{System.Guid})" -->
+        <member name="M:WMS.Domain.Repositorys.IWmsCheckDetailRepository.GetListAsync(System.Collections.Generic.IEnumerable{System.Guid})">
+            <summary>
+            查询列表
+            </summary>
+            <param name="ids">明细id集合</param>
+            <returns>盘点明细列表</returns>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IWmsCheckDetailRepository.GetListAsync(System.Guid,System.Int32,System.Int32,System.String)">
+            <summary>
+            导出查询
+            </summary>
+            <param name="checkWarehouseId">仓库id</param>
+            <param name="state">盘点状态 (0:未盘 1：已盘)</param>
+            <param name="keyType">查询类型（0 名称 1 规格 ）</param>
+            <param name="key">关键字</param>
+            <returns>盘点明细列表</returns>
+        </member>
+        <member name="T:WMS.Domain.Repositorys.IWmsCheckRepository">
+            <summary>
+            仓储：盘点表
+            </summary>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IWmsCheckRepository.GetPageAsync(System.Int32,System.Int32,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32)">
+            <summary>
+            查询分页
+            </summary>
+            <param name="pageIndex">页码</param>
+            <param name="pageSize">页数</param>
+            <param name="beginTime">开始时间</param>
+            <param name="endTime">结束时间</param>
+            <param name="state">状态（0 待盘点 1 已盘点）</param>
+            <returns>分页</returns>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IWmsCheckRepository.GetListAsync(System.Guid)">
+            <summary>
+            查询列表
+            </summary>
+            <param name="id">id</param>
+            <returns>盘点明细列表</returns>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IWmsCheckRepository.GetWithDetailAsync(System.Guid)">
+            <summary>
+            查询(含明细)
+            </summary>
+            <param name="id">盘点id</param>
+            <returns>查询结果</returns>
+        </member>
+        <member name="T:WMS.Domain.Repositorys.IWmsExWarehouseDetailRepository">
+            <summary>
+            仓储：出库记录详情
+            </summary>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IWmsExWarehouseDetailRepository.GetWithExWarehouseAsync(System.String)">
+            <summary>
+            查询实体（含出库记录）
+            </summary>
+            <param name="code">序列号</param>
+            <returns>实体</returns>
+        </member>
+        <member name="T:WMS.Domain.Repositorys.IWmsExWarehouseRepository">
+            <summary>
+            仓储：出库记录
+            </summary>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IWmsExWarehouseRepository.GetPageAsync(System.Int32,System.Int32,System.Linq.Expressions.Expression{System.Func{WMS.Domain.AggregateRoots.WmsExWarehouse,System.Boolean}})">
+            <summary>
+            查询分页
+            </summary>
+            <param name="pageIndex">页码</param>
+            <param name="pageSize">页面大小</param>
+            <param name="predicate">自定义条件</param>
+            <returns>分页</returns>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IWmsExWarehouseRepository.GetWithDetailAsync(System.Guid,System.Guid)">
+            <summary>
+            查询实体（含详情记录）
+            </summary>
+            <param name="warehouseId">仓库id</param>
+            <param name="id">实体id</param>
+            <returns>实体</returns>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IWmsExWarehouseRepository.GetWithDetailAsync(System.Collections.Generic.IEnumerable{System.Guid})">
+            <summary>
+            查询实体（含详情记录）
+            </summary>
+            <param name="exWarehouseId">出库id</param>
+            <returns>实体</returns>
+        </member>
+        <member name="T:WMS.Domain.Repositorys.IWmsGoodsRepository">
+            <summary>
+            仓储：物品信息
+            </summary>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IWmsGoodsRepository.GetPageAsync(System.Int32,System.Int32,System.Collections.Generic.IEnumerable{System.Guid},System.Int32,System.String)">
+            <summary>
+            查询分页
+            </summary>
+            <param name="pageIndex">页码</param>
+            <param name="pageSize">页面大小</param>
+            <param name="typeIds">分类Id</param>
+            <param name="keyType">关键字类型（0编号 1名称）</param>
+            <param name="key">关键字</param>
+            <returns>分页</returns>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IWmsGoodsRepository.CountAsync(System.Guid)">
+            <summary>
+            统计数量
+            </summary>
+            <param name="typeId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IWmsGoodsRepository.GetListWithTypeAsync(System.Collections.Generic.IEnumerable{System.Guid})">
+            <summary>
+            查询列表（含分类）
+            </summary>
+            <param name="typeIds">分类Id集合</param>
+            <returns>物品列表</returns>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IWmsGoodsRepository.GetListAsync(System.Collections.Generic.IEnumerable{System.Guid})">
+            <summary>
+            查询列表
+            </summary>
+            <param name="ids">物品Id集合</param>
+            <returns>物品列表</returns>
+        </member>
+        <member name="T:WMS.Domain.Repositorys.IWmsGoodsTypeRepository">
+            <summary>
+            仓储：物品分类
+            </summary>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IWmsGoodsTypeRepository.FindFirstChildAsync(System.Guid)">
+            <summary>
+            查找第一个子级
+            </summary>
+            <param name="id">分类id</param>
+            <returns>实体</returns>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IWmsGoodsTypeRepository.Count(System.Guid)">
+            <summary>
+            查找此父级ID下的分类数量
+            </summary>
+            <param name="id">分类id</param>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IWmsGoodsTypeRepository.GetAsync(System.Int32,System.Guid)">
+            <summary>
+            查找分类
+            </summary>
+            <param name="sortNumber">序号</param>
+            <param name="parentId">父级id</param>
+        </member>
+        <member name="T:WMS.Domain.Repositorys.IWmsInventoryDetailRepository">
+            <summary>
+            仓储：库存记录详情
+            </summary>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IWmsInventoryDetailRepository.GetWithInventoryAsync(System.String)">
+            <summary>
+            查询实体（含库存记录）
+            </summary>
+            <param name="code">序列号</param>
+            <returns>实体</returns>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IWmsInventoryDetailRepository.GetListAsync(System.String)">
+            <summary>
+            查询实体（含库存记录）
+            </summary>
+            <param name="code">序列号</param>
+            <returns>实体</returns>
+        </member>
+        <member name="T:WMS.Domain.Repositorys.IWmsInventoryRepository">
+            <summary>
+            仓储：库存
+            </summary>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IWmsInventoryRepository.GetListAsync(System.Guid,System.Collections.Generic.IEnumerable{System.Guid})">
+            <summary>
+            查询实体（含详情记录）
+            </summary>
+            <param name="InWarehouseId">调入仓库id</param>
+            <param name="GoodsId">物品id集合</param>
+            <returns>实体</returns>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IWmsInventoryRepository.GetListWithDetailAsync(System.Guid,System.Collections.Generic.IEnumerable{System.Guid})">
+            <summary>
+            查询实体（含详情记录）
+            </summary>
+            <param name="warehouseId">仓库id</param>
+            <param name="goodsIds">物品id集合</param>
+            <returns>实体</returns>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IWmsInventoryRepository.GetListAsync(System.Collections.Generic.IEnumerable{System.Guid},System.Guid)">
+            <summary>
+            根据物品Id查询是否含有该库存
+            </summary>
+            <param name="goodsId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IWmsInventoryRepository.GetListAsync(System.Guid,System.String)">
+            <summary>
+            查询实体列表
+            </summary>
+            <param name="warehouseId">调出仓库</param>
+            <param name="condition">编号名称型号</param>
+            <returns>实体</returns>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IWmsInventoryRepository.GetListAsync(System.Collections.Generic.IEnumerable{System.Guid})">
+            <summary>
+            查询实体列表
+            </summary>
+            <param name="ids">库存id集合</param>
+            <returns>实体</returns>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IWmsInventoryRepository.GetListWithCheckAsync(System.Collections.Generic.IEnumerable{System.Guid},System.String)">
+            <summary>
+            查询实体（含详情记录）
+            </summary>
+            <param name="warehouseIds">仓库id</param>
+            <returns>实体</returns>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IWmsInventoryRepository.GetPageAsync(System.Int32,System.Int32,System.Linq.Expressions.Expression{System.Func{WMS.Domain.AggregateRoots.WmsInventory,System.Boolean}})">
+            <summary>
+            查询分页
+            </summary>
+            <param name="pageIndex">页码</param>
+            <param name="pageSize">页面大小</param>
+            <param name="predicate">自定义条件</param>
+            <returns>分页</returns>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IWmsInventoryRepository.GetListWithDetailAsync(System.Guid)">
+            <summary>
+            查询列表（含详情记录）
+            </summary>
+            <param name="InventoryId">库存id</param>
+            <returns>实体</returns>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IWmsInventoryRepository.GetWithDetailAsync(System.Guid,System.Guid)">
+            <summary>
+            查询实体（含详情记录）
+            </summary>
+            <param name="warehouseId">仓库id</param>
+            <param name="goodsId">物品id集合</param>
+            <returns>实体</returns>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IWmsInventoryRepository.GetListWithDetailAsync(System.Collections.Generic.IEnumerable{System.Guid},System.String)">
+            <summary>
+            查询实体列表（含详情记录）
+            </summary>
+            <param name="warehouseIds">仓库id集合</param>
+            <param name="key">关键字</param>
+            <returns>实体</returns>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IWmsInventoryRepository.GetListWithDetailAsync(System.Collections.Generic.IEnumerable{System.Guid})">
+            <summary>
+            查询列表（含详情记录）
+            </summary>
+            <param name="ids">数据id</param>
+            <returns>实体</returns>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IWmsInventoryRepository.GetListWithDetailsAsync(System.Guid,System.Collections.Generic.IEnumerable{System.Guid})">
+            <summary>
+            查询列表（含详情记录）
+            </summary>
+            <param name="ids">库存id集合</param>
+            <param name="ExWarehouseId">出库id</param>
+            <returns>实体</returns>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IWmsInventoryRepository.GetListWithDetailAsync(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            查询列表（含详情记录）
+            </summary>
+            <param name="ids">ids</param>
+            <returns>实体</returns>
+        </member>
+        <member name="T:WMS.Domain.Repositorys.IWmsInWarehouseDetailRepository">
+            <summary>
+            仓储：入库记录明细
+            </summary>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IWmsInWarehouseDetailRepository.GetWithInWarehouseAsync(System.String)">
+            <summary>
+            查询实体（含入库记录）
+            </summary>
+            <param name="code">序列号</param>
+            <returns>实体</returns>
+        </member>
+        <member name="T:WMS.Domain.Repositorys.IWmsInWarehouseRepository">
+            <summary>
+            仓储：入库
+            </summary>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IWmsInWarehouseRepository.GetPageAsync(System.Int32,System.Int32,System.Linq.Expressions.Expression{System.Func{WMS.Domain.AggregateRoots.WmsInWarehouse,System.Boolean}})">
+            <summary>
+            查询分页
+            </summary>
+            <param name="pageIndex">页码</param>
+            <param name="pageSize">页面大小</param>
+            <param name="predicate">自定义条件</param>
+            <returns>分页</returns>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IWmsInWarehouseRepository.GetWithDetailAsync(System.Guid,System.Guid)">
+            <summary>
+            查询实体（含详情记录）
+            </summary>
+            <param name="warehouseId">仓库id</param>
+            <param name="id">实体id</param>
+            <returns>实体</returns>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IWmsInWarehouseRepository.GetWithDetailAsync(System.Guid,System.Collections.Generic.List{System.String})">
+            <summary>
+            查询实体（含详情）
+            </summary>
+            <param name="goodsid">物品Id</param>
+            <param name="code">序列号</param>
+            <returns></returns>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IWmsInWarehouseRepository.GetListAsync(System.Guid,System.Collections.Generic.List{System.Guid})">
+            <summary>
+            查询实体
+            </summary>
+            <param name="warehouseId">仓库id</param>
+            <param name="goodsId">物品id集合</param>
+            <returns></returns>
+        </member>
+        <member name="T:WMS.Domain.Repositorys.IWmsSupplierRepository">
+            <summary>
+            仓储：供应商
+            </summary>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IWmsSupplierRepository.GetPageAsync(System.Int32,System.Int32,System.Int32,System.String)">
+            <summary>
+            查询分页
+            </summary>
+            <param name="pageIndex">页码</param>
+            <param name="pageSize">页数</param>
+            <param name="keyType">关键字类型（0名称 1简称 2联系人 3联系人电话 4产品范围）</param>
+            <param name="key">关键字</param>
+            <returns>分页</returns>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IWmsSupplierRepository.GetAsync(System.String,System.String)">
+            <summary>
+            查询实体
+            </summary>
+            <param name="name">名称</param>
+            <param name="brand">品牌</param>
+            <returns>实体</returns>
+        </member>
+        <member name="T:WMS.Domain.Repositorys.IWmsWarehouseRepository">
+            <summary>
+            仓储：仓库
+            </summary>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IWmsWarehouseRepository.GetPageAsync(System.Int32,System.Int32,System.String)">
+            <summary>
+            查询分页
+            </summary>
+            <param name="pageIndex">页码</param>
+            <param name="pageSize">页数</param>
+            <param name="key">关键字</param>
+            <returns>分页</returns>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IWmsWarehouseRepository.GetListAsync(System.Collections.Generic.IEnumerable{System.Guid})">
+            <summary>
+            查询实体
+            </summary>
+            <param name="ids">id集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:WMS.Domain.Repositorys.IWmsWarehouseRepository.GetTheGoodsId(System.Guid)">
+            <summary>
+            根据物品种类ID查询仓库表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:WMS.Domain.ValueObjects.WmsDuplicateExWarehouse">
+            <summary>
+            值：重复出库记录
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.ValueObjects.WmsDuplicateExWarehouse.InventoryId">
+            <summary>
+            库存id
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.ValueObjects.WmsDuplicateExWarehouse.Details">
+            <summary>
+            重复的序列号集合
+            </summary>
+        </member>
+        <member name="T:WMS.Domain.ValueObjects.WmsDuplicateExWarehouseDetail">
+            <summary>
+            值：重复出库详情
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.ValueObjects.WmsDuplicateExWarehouseDetail.Code">
+            <summary>
+            序列号
+            </summary>
+        </member>
+        <member name="T:WMS.Domain.ValueObjects.WmsDuplicateInWarehouse">
+            <summary>
+            值：重复入库记录
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.ValueObjects.WmsDuplicateInWarehouse.GoodsId">
+            <summary>
+            物品id
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.ValueObjects.WmsDuplicateInWarehouse.Details">
+            <summary>
+            重复的序列号集合
+            </summary>
+        </member>
+        <member name="T:WMS.Domain.ValueObjects.WmsDuplicateInWarehouseDetail">
+            <summary>
+            值：重复入库详情
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.ValueObjects.WmsDuplicateInWarehouseDetail.Code">
+            <summary>
+            序列号
+            </summary>
+        </member>
+        <member name="P:WMS.Domain.ValueObjects.WmsDuplicateInWarehouseDetail.WarehouseName">
+            <summary>
+            仓库名称
+            </summary>
+        </member>
+        <member name="T:WMS.Domain.WmsAllotManager">
+            <summary>
+            领域服务：调拨记录
+            </summary>
+        </member>
+        <member name="M:WMS.Domain.WmsAllotManager.AddAsync(System.Guid,WMS.Domain.Models.WmsLoginUser,System.Guid,System.Guid,System.Collections.Generic.IEnumerable{WMS.Domain.Models.WmsAllotForm})">
+            <summary>
+            添加
+            </summary>
+            <param name="tenantId">租户Id</param>
+            <param name="loginUser">创建者</param>
+            <param name="InWarehouseId">调入仓库</param>
+            <param name="ExWarehouseId">调出仓库</param>
+            <param name="entities">实体</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:WMS.Domain.WmsAllotManager.GetPageAsync(System.Int32,System.Int32,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.String)">
+            <summary>
+            分页
+            </summary>
+            <param name="pageIndex">页码</param>
+            <param name="pageSize">页数</param>
+            <param name="beginTime">开始时间</param>
+            <param name="endTime">结束时间</param>
+            <param name="keyType">查询类型（0 名称 1 型号 2 序列号）</param>
+            <param name="key">关键字</param>
+            <returns>分页</returns>
+        </member>
+        <member name="M:WMS.Domain.WmsAllotManager.ExportExcelAsync(System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.String,System.String)">
+            <summary>
+            导出
+            </summary>
+            <param name="beginTime">开始时间</param>
+            <param name="endTime">结束时间</param>
+            <param name="keyType">查询类型（0 名称 1 型号 ）</param>
+            <param name="key">关键字</param>
+            <param name="SN">序列号</param>
+            <returns></returns>
+        </member>
+        <member name="M:WMS.Domain.WmsAllotManager.DeleteAsync(System.Guid)">
+            <summary>
+            删除
+            </summary>
+            <param name="id">调拨Id</param>
+            <returns>结果</returns>
+        </member>
+        <member name="T:WMS.Domain.WmsAmendManager">
+            <summary>
+            领域服务：修正信息
+            </summary>
+        </member>
+        <member name="M:WMS.Domain.WmsAmendManager.GetPageAsync(System.Int32,System.Int32,System.Guid,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.String,System.String)">
+            <summary>
+            查询分页
+            </summary>
+            <param name="pageIndex">页码</param>
+            <param name="pageSize">页数</param>
+            <param name="warehouseId">仓库id</param>
+            <param name="beginTime">开始时间</param>
+            <param name="endTime">结束时间</param>
+            <param name="keyType">查询类型（0 单号 1 名称 2 型号）</param>
+            <param name="key">关键字</param>
+            <param name="SN">序列号</param>
+            <returns>分页</returns>
+        </member>
+        <member name="M:WMS.Domain.WmsAmendManager.ExportExcelAsync(System.Guid,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.String,System.String)">
+            <summary>
+            导出
+            </summary>
+            <param name="warehouseId">仓库id</param>
+            <param name="beginTime">开始时间</param>
+            <param name="endTime">结束时间</param>
+            <param name="keyType">查询类型（0 单号 1 名称 2 型号）</param>
+            <param name="key">关键字</param>
+            <param name="SN">序列号</param>
+            <returns>导出结果</returns>
+        </member>
+        <member name="T:WMS.Domain.WmsApplyManager">
+            <summary>
+            领域服务：申领信息
+            </summary>
+        </member>
+        <member name="M:WMS.Domain.WmsApplyManager.GetPageAsync(System.Int32,System.Int32,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.Int32,System.String)">
+            <summary>
+            分页
+            </summary>
+            <param name="pageIndex">页码</param>
+            <param name="pageSize">页数</param>
+            <param name="beginTime">开始时间</param>
+            <param name="endTime">结束时间</param>
+            <param name="state">状态</param>
+            <param name="keyType">查询类型（0 名称 1 型号 2 用途）</param>
+            <param name="key">关键字</param>
+            <returns>分页</returns>
+        </member>
+        <member name="M:WMS.Domain.WmsApplyManager.AddAsync(System.Guid,WMS.Domain.Models.WmsLoginUser,WMS.Domain.Models.WmsApplyForm)">
+            <summary>
+            添加
+            </summary>
+            <param name="tenantId">租户Id</param>
+            <param name="loginUser">创建者</param>
+            <param name="entity">实体</param>
+            <returns></returns>
+        </member>
+        <member name="M:WMS.Domain.WmsApplyManager.ExportExcelAsync(System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.Int32,System.String)">
+            <summary>
+            导出
+            </summary>
+            <param name="beginTime">开始时间</param>
+            <param name="endTime">结束时间</param>
+            <param name="state">状态</param>
+            <param name="keyType">查询类型（0 名称 1 型号）</param>
+            <param name="key">关键字</param>
+            <returns></returns>
+        </member>
+        <member name="M:WMS.Domain.WmsApplyManager.DeleteAsync(System.Guid)">
+            <summary>
+            删除
+            </summary>
+            <param name="id">申领Id</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:WMS.Domain.WmsApplyManager.GetTheGoods(System.Guid)">
+            <summary>
+            按物品ID进行仓库表查询
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WMS.Domain.WmsApplyManager.AddExRecordsAsync(WMS.Domain.Models.WmsLoginUser,System.Guid,System.Collections.Generic.IEnumerable{WMS.Domain.Models.WmsExWarehouseForm})">
+            <summary>
+            申领出库
+            </summary>
+            <param name="loginUser"></param>
+            <param name="id">实体id</param>
+            <param name="entities">出库列表</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:WMS.Domain.WmsApplyManager.UpdateState(System.Guid,System.Decimal)">
+            <summary>
+            修改申领明细及申领状态
+            </summary>
+            <param name="id">申领明细id</param>
+            <param name="amount">数量</param>
+            <returns></returns>
+        </member>
+        <member name="T:WMS.Domain.WmsCheckManager">
+            <summary>
+            领域服务：盘点信息
+            </summary>
+        </member>
+        <member name="M:WMS.Domain.WmsCheckManager.GetPageAsync(System.Int32,System.Int32,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32)">
+            <summary>
+            查询分页
+            </summary>
+            <param name="pageIndex">页码</param>
+            <param name="pageSize">页数</param>
+            <param name="beginTime">开始时间</param>
+            <param name="endTime">结束时间</param>
+            <param name="state">状态（0 待盘点 1 已盘点）</param>
+            <returns>分页</returns>
+        </member>
+        <member name="M:WMS.Domain.WmsCheckManager.AddAsync(System.Guid,WMS.Domain.Models.WmsLoginUser,WMS.Domain.Models.WmsCheckForm)">
+            <summary>
+            添加
+            </summary>
+            <param name="tenantId">机构id</param>
+            <param name="loginUser">创建者</param>
+            <param name="entity">实体</param>
+            <returns>添加结果</returns>
+        </member>
+        <member name="M:WMS.Domain.WmsCheckManager.UpdateAsync(System.Collections.Generic.IEnumerable{WMS.Domain.Models.WmsCheckResultForm})">
+            <summary>
+            填写盘点结果
+            </summary>
+            <param name="entities">实体</param>
+            <returns>添加结果</returns>
+        </member>
+        <member name="M:WMS.Domain.WmsCheckManager.DeleteAsync(System.Guid)">
+            <summary>
+            删除
+            </summary>
+            <param name="id">盘点Id</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:WMS.Domain.WmsCheckManager.AddAmendAsync(System.Guid,WMS.Domain.Models.WmsLoginUser,WMS.Domain.Models.WmsAmendForm)">
+            <summary>
+            添加修正信息
+            </summary>
+            <param name="tenantId">机构id</param>
+            <param name="loginUser">创建者</param>
+             <param name="entity">实体</param>
+            <returns></returns>
+        </member>
+        <member name="M:WMS.Domain.WmsCheckManager.ExportExcelAsync(System.Guid,System.Int32,System.Int32,System.String)">
+            <summary>
+            盘点明细导出
+            </summary>
+            <param name="checkWarehouseId">仓库id</param>
+            <param name="state">盘点状态 (0:未盘 1：已盘)</param>
+            <param name="keyType">查询类型（0 名称 1 规格 ）</param>
+            <param name="key">关键字</param>
+            <returns>导出结果</returns>
+        </member>
+        <member name="M:WMS.Domain.WmsCheckManager.EndAsync(System.Guid,System.Int32,System.Int32)">
+            <summary>
+            结束盘点
+            </summary>
+            <param name="id">盘点Id</param>
+            <param name="sum">总数</param>
+            <param name="HaveCheckCount">已盘点数量</param>
+            <returns>结果</returns>
+        </member>
+        <member name="T:WMS.Domain.WmsExWarehouseManager">
+            <summary>
+            领域服务：出库
+            </summary>
+        </member>
+        <member name="M:WMS.Domain.WmsExWarehouseManager.GetPageAsync(System.Int32,System.Int32,System.Guid,System.Int32,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime})">
+            <summary>
+            获取分页
+            </summary>
+            <param name="pageIndex">页码</param>
+            <param name="pageSize">页数</param>
+            <param name="warehouseId">仓库id</param>
+            <param name="keyType">查询类型（0 名称 1 规格 2 序列号）</param>
+            <param name="key">关键字</param>
+            <param name="beginTime">开始时间</param>
+            <param name="endTime">结束时间</param>
+            <returns>分页</returns>
+        </member>
+        <member name="M:WMS.Domain.WmsExWarehouseManager.AddAsync(WMS.Domain.Models.WmsLoginUser,System.Collections.Generic.IEnumerable{WMS.Domain.Models.WmsExWarehouseForm})">
+            <summary>
+            添加
+            </summary>
+            <param name="loginUser">创建者</param>
+            <param name="entities">实体</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:WMS.Domain.WmsExWarehouseManager.DeleteAsync(System.Guid,System.Guid)">
+            <summary>
+            删除
+            </summary>
+            <param name="warehouseId">创建者</param>
+            <param name="id">出库Id</param>
+            <returns>结果</returns>
+        </member>
+        <member name="T:WMS.Domain.WmsGoodsManager">
+            <summary>
+            领域服务：物品信息
+            </summary>
+        </member>
+        <member name="M:WMS.Domain.WmsGoodsManager.GetPageAsync(System.Int32,System.Int32,System.Guid,System.Int32,System.String)">
+            <summary>
+            获取分页
+            </summary>
+            <param name="pageIndex">页码</param>
+            <param name="pageSize">页面大小</param>
+            <param name="typeId">分类Id</param>
+            <param name="keyType">关键字类型（0编号 1名称）</param>
+            <param name="key">关键字</param>
+            <returns>分页</returns>
+        </member>
+        <member name="M:WMS.Domain.WmsGoodsManager.AddAsync(System.Guid,WMS.Domain.Models.WmsGoodsForm)">
+            <summary>
+            添加
+            </summary>
+            <param name="tenantId">租户id</param>
+            <param name="entity">实体</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:WMS.Domain.WmsGoodsManager.UpdateAsync(WMS.Domain.Models.WmsGoodsForm)">
+            <summary>
+            修改
+            </summary>
+            <param name="entity">实体</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:WMS.Domain.WmsGoodsManager.DeleteAsync(System.Guid)">
+            <summary>
+            删除
+            </summary>
+            <param name="id">实体</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:WMS.Domain.WmsGoodsManager.UploadImageAsync(System.Guid,System.Guid,System.String,System.IO.Stream)">
+            <summary>
+            上传图片
+            </summary>
+            <param name="tenantId">机构id</param>
+            <param name="id">物品id</param>
+            <param name="filename">文件名</param>
+            <param name="file">文件流</param>
+            <returns>上传结果</returns>
+        </member>
+        <member name="M:WMS.Domain.WmsGoodsManager.ExportExcelAsync(System.Guid)">
+            <summary>
+            导出Excel
+            </summary>
+            <param name="typeId">分类id</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:WMS.Domain.WmsGoodsManager.DownloadTemplate">
+            <summary>
+            下载模板
+            </summary>
+            <returns>结果</returns>
+        </member>
+        <member name="M:WMS.Domain.WmsGoodsManager.ImportExcelAsync(System.Guid,System.Collections.Generic.IEnumerable{WMS.Domain.Models.WmsGoodsImportForm})">
+            <summary>
+            导入Excel
+            </summary>
+            <param name="tenantId">租户id</param>
+            <param name="data">Excel导入对象</param>
+            <returns>消息</returns>
+        </member>
+        <member name="T:WMS.Domain.WmsGoodsTypeManager">
+            <summary>
+            领域服务：物品分类
+            </summary>
+        </member>
+        <member name="M:WMS.Domain.WmsGoodsTypeManager.GetListAsync">
+            <summary>
+            获取列表
+            </summary>
+            <returns>列表</returns>
+        </member>
+        <member name="M:WMS.Domain.WmsGoodsTypeManager.AddAsync(System.Guid,WMS.Domain.Models.WmsGoodsTypeForm)">
+            <summary>
+            添加
+            </summary>
+            <param name="tenantId">租户id</param>
+            <param name="entity">实体</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:WMS.Domain.WmsGoodsTypeManager.UpdateAsync(WMS.Domain.Models.WmsGoodsTypeForm)">
+            <summary>
+            修改
+            </summary>
+            <param name="entity">实体</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:WMS.Domain.WmsGoodsTypeManager.DeleteAsync(System.Guid)">
+            <summary>
+            删除
+            </summary>
+            <param name="id">分类Id</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:WMS.Domain.WmsGoodsTypeManager.SortAsync(System.Guid,WMS.Domain.Models.WmsGoodsTypeSortForm)">
+            <summary>
+            排序
+            </summary>
+            <param name="id">分类id</param>
+            <param name="entity">实体</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:WMS.Domain.WmsGoodsTypeManager.ShiftAsync(WMS.Domain.Models.WmsGoodsTypeShiftForm)">
+            <summary>
+            位移排序
+            </summary>
+            <param name="entity">实体</param>
+            <returns>结果</returns>
+        </member>
+        <member name="T:WMS.Domain.WmsInventoryManager">
+            <summary>
+            领域服务：库存
+            </summary>
+        </member>
+        <member name="M:WMS.Domain.WmsInventoryManager.GetPageAsync(System.Int32,System.Int32,System.Guid,System.Int32,System.String)">
+            <summary>
+            获取分页
+            </summary>
+            <param name="pageIndex">页码</param>
+            <param name="pageSize">页面大小</param>
+            <param name="warehouseId">仓库id</param>
+            <param name="keyType">关键字类型（0名称 1编号 2 序列号）</param>
+            <param name="key">关键字</param>
+            <returns>分页</returns>
+        </member>
+        <member name="T:WMS.Domain.WmsInWarehouseManager">
+            <summary>
+            领域服务：入库
+            </summary>
+        </member>
+        <member name="M:WMS.Domain.WmsInWarehouseManager.GetPageAsync(System.Int32,System.Int32,System.Guid,System.Int32,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime})">
+            <summary>
+            获取分页
+            </summary>
+            <param name="pageIndex">页码</param>
+            <param name="pageSize">页数</param>
+            <param name="warehouseId">仓库id</param>
+            <param name="keyType">查询类型（0 名称 1 规格 2 序列号）</param>
+            <param name="key">关键字</param>
+            <param name="beginTime">开始时间</param>
+            <param name="endTime">结束时间</param>
+            <returns>分页</returns>
+        </member>
+        <member name="M:WMS.Domain.WmsInWarehouseManager.AddAsync(WMS.Domain.Models.WmsLoginUser,System.Guid,System.Collections.Generic.IEnumerable{WMS.Domain.Models.WmsInWarehouseForm})">
+            <summary>
+            添加
+            </summary>
+            <param name="loginUser">创建者</param>
+            <param name="warehouseId">仓库id</param>
+            <param name="entities">实体集合</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:WMS.Domain.WmsInWarehouseManager.DeleteAsync(System.Guid,System.Guid)">
+            <summary>
+            删除
+            </summary>
+            <param name="warehouseId">仓库id</param>
+            <param name="id">入库记录id</param>
+            <returns>结果</returns>
+        </member>
+        <member name="T:WMS.Domain.WmsSupplierManager">
+            <summary>
+            领域服务：供应商
+            </summary>
+        </member>
+        <member name="M:WMS.Domain.WmsSupplierManager.GetPageAsync(System.Int32,System.Int32,System.Int32,System.String)">
+            <summary>
+            获取分页
+            </summary>
+            <param name="pageIndex">页码</param>
+            <param name="pageSize">页数</param>
+            <param name="keyType">关键字类型（0名称 1简称 2联系人 3联系人电话 4产品范围）</param>
+            <param name="key">关键字</param>
+            <returns>分页</returns>
+        </member>
+        <member name="M:WMS.Domain.WmsSupplierManager.AddAsync(System.Guid,WMS.Domain.Models.WmsSupplierForm)">
+            <summary>
+            添加
+            </summary>
+            <param name="tenantId">租户id</param>
+            <param name="entity">实体</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:WMS.Domain.WmsSupplierManager.UpdateAsync(WMS.Domain.Models.WmsSupplierForm)">
+            <summary>
+            修改
+            </summary>
+            <param name="entity">实体</param>
+            <returns></returns>
+        </member>
+        <member name="M:WMS.Domain.WmsSupplierManager.DeleteAsync(System.Guid)">
+            <summary>
+            删除
+            </summary>
+            <param name="id">供应商id</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:WMS.Domain.WmsSupplierManager.ExportExcelAsync">
+            <summary>
+            导出
+            </summary>
+            <returns>字节流</returns>
+        </member>
+        <member name="T:WMS.Domain.WmsWarehouseManager">
+            <summary>
+            领域服务：仓库信息
+            </summary>
+        </member>
+        <member name="M:WMS.Domain.WmsWarehouseManager.GetPageAsync(System.Int32,System.Int32,System.String)">
+            <summary>
+            获取分页
+            </summary>
+            <param name="pageIndex">页码</param>
+            <param name="pageSize">页面大小</param>
+            <param name="key">关键字</param>
+            <returns>分页</returns>
+        </member>
+        <member name="M:WMS.Domain.WmsWarehouseManager.AddAsync(System.Guid,WMS.Domain.Models.WmsWarehouseForm)">
+            <summary>
+            添加
+            </summary>
+            <param name="tenantId">租户id</param>
+            <param name="entity">实体</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:WMS.Domain.WmsWarehouseManager.UpdateAsync(WMS.Domain.Models.WmsWarehouseForm)">
+            <summary>
+            修改
+            </summary>
+            <param name="entity">实体</param>
+            <returns></returns>
+        </member>
+        <member name="M:WMS.Domain.WmsWarehouseManager.DeleteAsync(System.Guid)">
+            <summary>
+            删除
+            </summary>
+            <param name="id">实体id</param>
+            <returns>结果</returns>
+        </member>
+    </members>
+</doc>
